@@ -1,0 +1,79 @@
+ 
+body {
+    background-color: #FFFFFF;
+    background-image: url(../img/da-admin-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw 50vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.form-check-input { margin-top: 0 !important;}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-primary-btn {
+    background-color: #AF13AF;
+    border: 2px solid #AF13AF;
+    text-align: center;
+    color: #FFFFFF;
+}
+.login-primary-btn:hover {
+    background-color: #DD18DD;
+}
+.login-primary-btn:active {
+    background-color: #EA3EEA;
+}
+.login-primary-btn:disabled, .login-primary-btn[disabled] {
+    background-color: #F49AF4;
+}
+
+.form-check-input:checked {
+    background-color: #AF13AF;
+    border-color: #AF13AF;
+    outline: none;
+}
+.admin-login-input {
+    border: 0.75px solid #CAD4DD;
+    border-radius: 5px !important;
+}
+.login-fs {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+@media (max-width:476px) {
+    body {
+        background: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #1a1a1a;
+        background-color: #FFFFFF;
+    }
+    .admin-login {
+        background-color: rgb(255, 255, 255);
+    }
+    .admin-login-input {
+        border: 0.75px solid #1A1A1A;
+    }
+    .login-fs {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .login-mb-fs {
+        font-size: 11px;
+        line-height: 20px;  
+    }
+    .login-mb-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+}

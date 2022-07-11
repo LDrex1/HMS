@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Kimberly Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-3 py-md-5 py-lg-0">
+            <div class="container-fluid d-flex justify-content-between px-0">
+                <a class="navbar-brand height-50px md-height-75px me-lg-5 me-xl-5 ms-3 ms-lg-4 ms-xl-5" href="#">
+                    <img src="img/logo.png" alt="Our Logo" class="h-100">
+                </a>
+                <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOneContent" aria-controls="navbarOneContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOneContent">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between width-100 px-0 mx-0 ps-lg-0 ms-lg-0 ps-xl-5 ms-xl-5">
+                        <ul class="navbar-nav text-grey-4 d-flex flex-column flex-lg-row justify-content-between width-100 lg-width-50 xl-width-45">
+                            <li class="nav-item">
+                                <a class="nav-link fs-nav text-grey-4 fw-500 ms-3 active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-nav text-grey-4 fw-500 ms-3" href="#">Our Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-nav text-grey-4 fw-500 ms-3" href="#">Restaurants</a>
+                            </li>
+                        </ul>
+                        <div class="row d-flex flex-column flex-lg-row justify-content-between align-items-center width-100 lg-width-40 xl-width-40 me-lg-5 me-xl-5 m-0">
+                            <a href="#" class="col-12 col-lg-5 lg-bdr-rad-2 primary-btn text-decoration-none text-start text-lg-center text-white fw-500 lg-fw-700 fs-button py-2 ps-3 ps-lg-0 me-0">Log In</a>
+                            <a href="#" class="col-12 col-lg-5 lg-bdr-rad-2 nav-ghost-primary-btn text-decoration-none text-start text-lg-center fs-button py-2 ps-3 ps-lg-0">Sign Up</a>
+                            <div class="col-1 d-none d-lg-block">
+                                <img src="img/notification-on.png" alt="notification" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="space py-5 bg-secondary"></div>
+    <header>
+        <nav class="navbar bg-transparent py-3 py-md-5 py-lg-0">
+            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+        </nav>
+    </header>
+    <div class="space py-5 bg-secondary"></div>
+    <header>
+        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0 py-3 py-md-5 py-lg-0">
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start width-50" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
+                        <img src="img/logo.png" alt="Our Logo" class="h-100">
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    
+                </div>
+            </div>
+            <a href="#" class="navbar-brand height-50px md-height-75px ms-0 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+                    <!-- **************************END OF HEADERS**************************** -->
+
+                <!-- **************************BEGINNING OF MAIN SECTION**************************** -->
+
+        <!-- Copy the entire main element and delete what's in .main-content if you're building an admin page    -->
+
+    <main>
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-4 border-end hms-border p-0 m-0">
+
+        <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
+
+                <div class="sidenav bg-neutral-4 d-flex flex-column justify-content-between">
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 active">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link logout bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                            <p class="text-grey-1 fs-sidenav error-text text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                        </a>
+                        <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="modal-body p-4 p-md-5">
+                                        <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                        <div class="d-flex justify-content-between pt-2 pb-4">
+                                            <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                            <button type="button" class="primary-btn width-48 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3 my-3">Yes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content col-12 col-lg-10 position-relative">    <!--  This is .main-content   -->
+                <div class="container py-4 px-0 px-lg-4">   <!--  Delete everything inside this container if you're building an admin page   -->
+                    <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Background Colors Variations</h6>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-pink-1 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-pink-1</h6>
+                                    <p class="text-center fs-copyright fw-600">#AF13AF</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-pink-2 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-pink-2</h6>
+                                    <p class="text-center fs-copyright fw-600">#DD18DD</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-pink-3 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-pink-3</h6>
+                                    <p class="text-center fs-copyright fw-600">#EA3EEA</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-pink-4 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-pink-4</h6>
+                                    <p class="text-center fs-copyright fw-600">#EF6CEF</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-pink-5 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-pink-5</h6>
+                                    <p class="text-center fs-copyright fw-600">#F49AFA</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-sunset-pink mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-sunset-pink</h6>
+                                    <p class="text-center fs-copyright fw-600">#F24B86</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">Primary</h5>
+                                    <p class="text-pink text-center fw-600 my-2">Pink</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-gold-1 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-gold-1</h6>
+                                    <p class="text-center fs-copyright fw-600">#FADA14</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-gold-2 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-gold-2</h6>
+                                    <p class="text-center fs-copyright fw-600">#FEE23A</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-gold-3 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-gold-3</h6>
+                                    <p class="text-center fs-copyright fw-600">#FEE762</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-gold-4 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-gold-4</h6>
+                                    <p class="text-center fs-copyright fw-600">#FEEC7F</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-gold-5 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-gold-5</h6>
+                                    <p class="text-center fs-copyright fw-600">#FEF4B7</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">Secondary</h5>
+                                    <p class="text-gold text-center fw-600 my-2">Gold</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-white border hms-border box-shad-1 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-white</h6>
+                                    <p class="text-center fs-copyright fw-600">#FFFFFF</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-1 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-1</h6>
+                                    <p class="text-center fs-copyright fw-600">#6B6B6D</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-2 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-2</h6>
+                                    <p class="text-center fs-copyright fw-600">#89898B</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-3 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-3</h6>
+                                    <p class="text-center fs-copyright fw-600">#A6A6A8</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-4 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-4</h6>
+                                    <p class="text-center fs-copyright fw-600">#DEDEDE</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-5 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-5</h6>
+                                    <p class="text-center fs-copyright fw-600">#F4F4F4</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-6 mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-6</h6>
+                                    <p class="text-center fs-copyright fw-600">#F7F7F7</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-neutral-footer mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-neutral-footer</h6>
+                                    <p class="text-center fs-copyright fw-600">#393D46</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">Neutral</h5>
+                                    <p class="text-grey-3 text-center fw-600 my-2">White/Grey</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-blue mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-blue</h6>
+                                    <p class="text-center fs-copyright fw-600">#4D69FF</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-green mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-green</h6>
+                                    <p class="text-center fs-copyright fw-600">#23AC00</p>
+                                </div>
+                                <div class="color-group width-150px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <div class="ratio ratio-1x1 width-75px rounded-circle bg-red mb-4 mx-5"></div>
+                                    <h6 class="text-black text-center fs-input fw-700">.bg-red</h6>
+                                    <p class="text-center fs-copyright fw-600">#F04848</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">States</h5>
+                                    <p class="text-pink text-center fw-600 my-2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Text Colors Variations</h6>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-black">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-black</h6>
+                                    <p class="text-center fs-copyright fw-600">#000000</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-1">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-1</h6>
+                                    <p class="text-center fs-copyright fw-600">#1A1A1A</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-2">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-2</h6>
+                                    <p class="text-center fs-copyright fw-600">#333333</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-3">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-3</h6>
+                                    <p class="text-center fs-copyright fw-600">#393D46</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-4">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-4</h6>
+                                    <p class="text-center fs-copyright fw-600">#4D4D4D</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-5">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-5</h6>
+                                    <p class="text-center fs-copyright fw-600">#666666</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-grey-6">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-grey-6</h6>
+                                    <p class="text-center fs-copyright fw-600">#89898B</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">Black-ish</h5>
+                                    <p class="text-grey-3 text-center fw-600 my-2"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-6 col-lg-10 d-flex flex-wrap pe-5">
+                                <div class="colour-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-pink">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-pink</h6>
+                                    <p class="text-center fs-copyright fw-600">#AF13AF</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-sunset-pink">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-sunset-pink</h6>
+                                    <p class="text-center fs-copyright fw-600">#F24B86</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 text-gold">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.text-gold</h6>
+                                    <p class="text-center fs-copyright fw-600">#FADA14</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 warning-text">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.warning-text</h6>
+                                    <p class="text-center fs-copyright fw-600">#FAD200</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 info-text">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.info-text</h6>
+                                    <p class="text-center fs-copyright fw-600">#4D69FF</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 success-text">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.success-text</h6>
+                                    <p class="text-center fs-copyright fw-600">#23AC00</p>
+                                </div>
+                                <div class="color-group width-250px d-flex flex-column align-items-center me-1 mb-4 pt-4">
+                                    <h3 class="text-center fw-700 error-text">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.error-text</h6>
+                                    <p class="text-center fs-copyright fw-600">#F04848</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                                    <h5 class="text-black text-center fw-700 ff-nunito">Coloured</h5>
+                                    <p class="text-grey-3 text-center fw-600 my-2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Typography Variations</h6>
+                        <div class="row border rounded mx-0 mb-5">
+                            <div class="col-12 d-flex flex-wrap pe-5 pt-3">
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-headline-1">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-headline-1</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">48px/64px</span> / <span class="mobile-size">32px/36px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-headline-2">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-headline-2</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">40px/52px</span> / <span class="mobile-size">24px/28px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-headline-3">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-headline-3</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">34px/40px</span> / <span class="mobile-size">24px/28px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-body-1">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-body-1</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">24px/28px</span> / <span class="mobile-size">16px/24px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-body-2">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-body-2</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">16px/22px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-caption">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-caption</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">24px/28px</span> / <span class="mobile-size">14px/20px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-label">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-label</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">14px/18px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-large">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-large</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">55px/75px</span> / <span class="mobile-size">32px/36px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-medium">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-medium</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">36px/49px</span> / <span class="mobile-size">24px/32px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-small">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-small</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/28px</span> / <span class="mobile-size">14px/18px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-tiny">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-tiny</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">13px/15px</span> / <span class="mobile-size">13px/15px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-user">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-user</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">34px/40px</span> / <span class="mobile-size">18px/22px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-sidenav">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-sidenav</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">18px/24px</span> / <span class="mobile-size">14px/20px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-nav">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-nav</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">18px/22px</span> / <span class="mobile-size">16px/22px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-button">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-button</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">16px/22px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-input">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-input</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">16px/20px</span> / <span class="mobile-size">16px/20px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-footer">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-footer</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">20px/24px</span> / <span class="mobile-size">20px/24px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-form-input">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-form-input</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">12px/12px</span> / <span class="mobile-size">12px/12px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-copyright">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-copyright</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">14px/18px</span> / <span class="mobile-size">14px/18px</span></p>
+                                </div>
+                                <div class="text-group width-250px d-flex flex-column align-items-center border hms-border rounded me-1 mb-4 pb-4">
+                                    <h3 class="text-center text-black bg-gold-4 py-2 w-100 fs-forgot">Sample Text</h3>
+                                    <h6 class="text-black text-center fs-input fw-700">.fs-forgot</h6>
+                                    <p class="text-center fs-headline-1 bg-pink-5 fw-600 w-100 mt-3"><span class="desktop-size">16px/24px</span> / <span class="mobile-size">10px/20px</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 border hms-border bg-white py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center mb-5">Input Type 1 Variations</h6>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">First Name</p>
+                                <input type="text" name="first-name" id="" class="form-input-1 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="First Name">
+                                <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Last Name</p>
+                                <input type="text" name="last-name" id="" class="form-input-1 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Last Name">
+                                <img src="img/name-input.png" alt="" class="input-icon">
+                                <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                            </div>
+                        </div>
+                        <div class="input-group width-100 mt-2 mb-4 position-relative">
+                            <p class="fs-form-input mb-1">Address Line 1</p>
+                            <input type="text" name="address-1" id="" class="form-input-1 box-shad-1 width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Address Line 1">
+                            <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                        </div>
+                        <div class="input-group w-100 mt-2 mb-4 position-relative">
+                            <p class="fs-form-input mb-1">Email</p>
+                            <input type="email" name="email" id="" class="form-input-1 box-shad-1 width-100 bdr-rad-2 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Email">
+                            <img src="img/email-input.png" alt="" class="input-icon">
+                            <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                        </div>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Password</p>
+                                <input type="password" name="password" id="password2" class="form-input-1 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Password">
+                                <img src="img/password-input.png" alt="" class="input-icon">
+                                <div id="password-toggler2" class="password-toggler" role="button" onclick="passwordToggleTwo()">
+                                    <img src="img/eye-open.png" id="eye-open2" class="password-eyes eye-open">
+                                    <img src="img/eye-closed.png" id="eye-closed2" class="password-eyes eye-closed">
+                                </div>
+                                <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Select</p>
+                                <select name="select" id="" class="form-input-1 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1">
+                                    <option value="" disabled selected>Please choose an option below...</option>
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                    <option value="3">Option three</option>
+                                    <option value="4">Option four</option>
+                                </select>
+                                <img src="img/google-input.png" alt="" class="input-icon">
+                                <img src="img/select-icon.png" alt="" class="input-icon-right">
+                                <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                            </div>
+                        </div>
+                        <div class="input-group w-100 mt-2 mb-4 position-relative">
+                            <label for="" class="p-0 m-0 me-4 h-50">
+                                <div class="d-flex align-items-center justify-content-center p-0">
+                                    <div class="radio-wrap d-flex align-items-center justify-content-center rounded-circle width-30px height-30px border dark-border bg-neutral-4 p-0 m-0">
+                                        <input type="radio" name="test" id="" class="m-0">
+                                    </div>
+                                    <p class="fs-small m-0 ps-2">Test Label 1</p>
+                                </div>
+                            </label>
+                            <label for="" class="p-0 m-0 me-4 h-50">
+                                <div class="d-flex align-items-center justify-content-center p-0">
+                                    <div class="radio-wrap d-flex align-items-center justify-content-center rounded-circle width-30px height-30px border dark-border bg-neutral-4 p-0 m-0">
+                                        <input type="radio" name="test" id="" class="m-0">
+                                    </div>
+                                    <p class="fs-small m-0 ps-2">Test Label 2</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="input-group w-100 mt-2 mb-4 position-relative">
+                            <label for="" class="p-0 m-0 me-4 h-50">
+                                <div class="d-flex align-items-center justify-content-center p-0">
+                                    <input type="checkbox" name="" id="" class="m-0">
+                                    <p class="fs-forgot m-0 ps-2">Test Label 1</p>
+                                </div>
+                            </label>
+                            <label for="" class="p-0 m-0 me-4 h-50">
+                                <div class="d-flex align-items-center justify-content-center p-0">
+                                    <input type="checkbox" name="" id="" class="m-0">
+                                    <p class="fs-forgot m-0 ps-2">Test Label 2</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-headline-1 text-grey-1 text-center">Input Type 2 Variations</h6>
+                        <div class="input-group d-flex justify-content-between mt-5">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">First Name</p>
+                                <input type="text" name="first-name2" id="" class="form-input-2 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="First Name">
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Last Name</p>
+                                <input type="text" name="last-name2" id="" class="form-input-2 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Last Name">
+                                <img src="img/name-input.png" alt="" class="input-icon">
+                            </div>
+                        </div>
+                        <div class="input-group width-100 mb-4 position-relative">
+                            <p class="fs-form-input mb-1">Address Line 1</p>
+                            <input type="text" name="address-2" id="" class="form-input-2 width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Address Line 1">
+                        </div>
+                        <div class="input-group w-100 mb-4 position-relative">
+                            <p class="fs-form-input mb-1">Email</p>
+                            <input type="email" name="email2" id="" class="form-input-2 w-100 bdr-rad-2 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Email">
+                            <img src="img/email-input.png" alt="" class="input-icon">
+                        </div>
+                        <div class="input-group d-flex justify-content-between">
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Password</p>
+                                <input type="password" name="password2" id="password1" class="form-input-2 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" placeholder="Password">
+                                <img src="img/password-input.png" alt="" class="input-icon">
+                                <div id="password-toggler1" class="password-toggler" role="button" onclick="passwordToggle()">
+                                    <img src="img/eye-open.png" id="eye-open1" class="password-eyes eye-open">
+                                    <img src="img/eye-closed.png" id="eye-closed1" class="password-eyes eye-closed">
+                                </div>
+                            </div>
+                            <div class="short-input width-100 lg-width-48 mb-4 position-relative">
+                                <p class="fs-form-input mb-1">Select</p>
+                                <select name="select2" id="" class="form-input-2 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1">
+                                    <option value="" disabled selected>Please choose an option below...</option>
+                                    <option value="1">Option one</option>
+                                    <option value="2">Option two</option>
+                                    <option value="3">Option three</option>
+                                    <option value="4">Option four</option>
+                                </select>
+                                <img src="img/google-input.png" alt="" class="input-icon">
+                                <img src="img/select-icon.png" alt="" class="input-icon-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center">Primary Button Variations</h6>
+                        <div class="width-100 md-width-75 lg-width-50 bg-gold-5 mx-auto p-5">
+                            <button class="primary-btn w-100 text-center fs-copyright fw-600 text-white py-3 my-3">100% width button</button>
+                            <button class="primary-btn w-100 text-center fs-copyright fw-600 text-white bdr-rad-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="primary-btn width-45 text-center fs-copyright fw-600 text-white py-3 my-3">Half-width</button>
+                                <button class="primary-btn width-45 text-center fs-copyright fw-600 text-white bdr-rad-2 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <button class="ghost-primary-btn w-100 text-center fs-copyright fw-600 text-pink py-3 my-3">100% width button</button>
+                            <button class="ghost-primary-btn w-100 text-center fs-copyright fw-600 text-pink bdr-rad-2 bdr-width-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="ghost-primary-btn width-45 text-center fs-copyright fw-600 text-pink bdr-width-3 py-3 my-3">Half-width</button>
+                                <button class="ghost-primary-btn width-45 text-center fs-copyright fw-600 text-pink bdr-rad-2 bdr-width-5 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="primary-btn text-center fs-copyright fw-600 text-pink bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="ghost-primary-btn text-center fs-copyright fw-600 text-pink bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center">Secondary Button Variations</h6>
+                        <div class="width-100 md-width-75 lg-width-50 bg-pink-5 mx-auto p-5">
+                            <button class="secondary-btn w-100 text-center fs-copyright fw-600 py-3 my-3">100% width button</button>
+                            <button class="secondary-btn w-100 text-center fs-copyright fw-600 bdr-rad-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="secondary-btn width-45 text-center fs-copyright fw-600 py-3 my-3">Half-width</button>
+                                <button class="secondary-btn width-45 text-center fs-copyright fw-600 bdr-rad-2 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <button class="ghost-secondary-btn w-100 text-center fs-copyright fw-600 py-3 my-3">100% width button</button>
+                            <button class="ghost-secondary-btn w-100 text-center fs-copyright fw-600 bdr-rad-2 bdr-width-2 py-3 my-3">With border radius</button>
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="ghost-secondary-btn width-45 text-center fs-copyright fw-600 bdr-width-3 py-3 my-3">Half-width</button>
+                                <button class="ghost-secondary-btn width-45 text-center fs-copyright fw-600 bdr-rad-2 bdr-width-5 py-3 my-3">...well almost😜</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="secondary-btn text-center fs-copyright fw-600 bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="ghost-secondary-btn text-center fs-copyright fw-600 bdr-width-3 px-5 py-3 mx-auto my-3">Just padding</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- **************************TABLES SECTION**************************** -->
+
+                    <div class="content-box-1 bdr-rad-1 bg-white border hms-border py-4 px-1 px-md-4 px-lg-5 mx-0 mb-5">
+                        <h6 class="fs-body-1 fw-700 text-grey-1 text-center mb-5">Table Variations</h6>
+
+                        <div class="d-flex justify-content-end w-100 mt-5 pt-3">
+                            <button id="sort-btn-1" class="dropdown-button border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                                <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-4"></i></span></p>
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-end w-100 mb-5 pb-3">
+                            <div class="btn-dropdown-space width-50 position-relative">
+                                <div id="sort-dropdown-1" class="btn-dropdown bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                    <ul class="m-0 p-0">
+                                        <li class="d-flex pb-1">
+                                            <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                        </li>
+                                        <li class="d-flex pt-1">
+                                            <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Alphabetical Order</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- .hms-table-1 (Copy the table below if you have a table on your admin page) -->
+
+                        <table class="hms-table-1">
+                            <col width="40%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <thead>
+                                <tr>
+                                    <th class="ps-5">Name</th>
+                                    <th>Reservations</th>
+                                    <th>Nights Stayed</th>
+                                    <th>Last Visit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <!-- Below this is a table body row. Duplicate this if your table has more lines than what I have here.  -->
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <!-- Above is a table row. -->
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                                                <!-- .hms-table-1 ends above -->
+
+                            <!-- If your admin table features a modal to display some content then copy the modal below  -->
+
+                        <div class="modal fade" id="adminTableModal" tabindex="-1" aria-label="Name of Guest" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="d-flex justify-content-end pe-2 py-3">
+                                        <button type="button" class=" modal-close bg-white border-none" data-bs-dismiss="modal" aria-label="Close">
+                                            <span class="iconify" data-icon="clarity:window-close-line" data-width="36" data-height="36"></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-1 p-md-4">
+                                        <div class="py-0 mx-0 mb-5">
+                                            <div class="d-flex align-items-center ps-1 mb-4">
+                                                <div class="ratio ratio-1x1 width-100px rounded-circle me-4">
+                                                    <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                                </div>
+                                                <h6 class="text-grey-1 text-uppercase fs-body-2 fw-700">Richard Tobenna</h6>
+                                            </div>
+                                            <!-- .hms-modal-table starts below. Yes, the .table-wrap div is essential to the table -->
+                                            <div class="table-wrap bg-neutral-6 border hms-border bdr-rad-1 position-relative">
+                                                <div id="personal-details" class="tab-page pt-5 pb-3 bdr-rad-1">
+
+                                                </div>
+
+                                                <table id="booking-history" class="hms-modal-table tab-page bg-neutral-6 border hms-border hide">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <thead>
+                                                        <tr class="text-grey-5" valign="bottom">
+                                                            <th>Date</th>
+                                                            <th>Room Type</th>
+                                                            <th>Status</th>
+                                                            <th>No. Of Nights Spent</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody valign="bottom">
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="text-pink">Reserved</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <!-- Table row below. Duplicate for more lines in your modal table -->
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="success-text">Stayed</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <!-- Table row above -->
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="text-pink">Reserved</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="error-text">Cancelled</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="tab-btns-row w-100 bdr-rad-1 position-absolute top-0 start-0">
+                                                    <div class="w-100 d-flex justify-content-between py-5 px-1 px-md-3 px-lg-4">
+                                                        <p role="button" class="tab-btn d-inline-block text-grey-5 fw-700 fs-table current" data-page="#personal-details">Personal Details</p>
+                                                        <p role="button" class="tab-btn d-inline-block text-grey-5 fw-700 fs-table" data-page="#booking-history">Booking History</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .hms-modal-table ends here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Admin modal ends above -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                <!-- **************************END OF MAIN SECTION**************************** -->
+
+    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-12 mt-5">
+                    <div class="">
+                        <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
+                        <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
+                    </div>
+                    <form action="" method="post">
+                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
+                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
+                    
+                    <h6 class="fs-input mb-3">Restaurants</h6>
+                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
+                    <h6 class="fs-input mb-3">Events</h6>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Company</h5>
+                    
+                    <h6 class="fs-input mb-2">About us</h6>
+                    <h6 class="fs-input mb-2">Blog</h6>
+                    <h6 class="fs-input mb-2">Contact us</h6>
+                    <h6 class="fs-input mb-4">Services</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Support</h5>
+                    
+                    <h6 class="fs-input mb-2">Support center</h6>
+                    <h6 class="fs-input mb-2">FAQ</h6>
+                    <h6 class="fs-input mb-2">Privacy Policy</h6>
+                    <h6 class="fs-input mb-4">Terms of service</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
+                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
+                    <i class="fa-brands fa-twitter me-4"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                </div>
+
+            </div>
+
+           <div class="row">
+                <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
+           </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>                                          <!-- It's for the icons in the sidenav -->
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
