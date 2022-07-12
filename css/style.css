@@ -41,6 +41,7 @@ body {
 .pink-border {border-color: #AF13AF !important;}
 .gold-border {border-color: #FADA14 !important;}
 .hms-border { border-color: #076DF320 !important;}
+.hms2-border { border-color: #CAD4DD !important;}
 .dark-border { border-color: #1a1a1a !important;}
 
 .text-black { color: #000000;}
@@ -85,6 +86,7 @@ body {
     .md-pink-border {border-color: #AF13AF !important;}
     .md-gold-border {border-color: #FADA14 !important;}
     .md-hms-border { border-color: #076DF320 !important;}
+    .md-hms2-border { border-color: #CAD4DD !important;}
     .md-dark-border { border-color: #1a1a1a !important;}
 
     .md-text-black { color: #000000;}
@@ -130,6 +132,7 @@ body {
     .lg-pink-border {border-color: #AF13AF !important;}
     .lg-gold-border {border-color: #FADA14 !important;}
     .lg-hms-border { border-color: #076DF320 !important;}
+    .lg-hms2-border { border-color: #CAD4DD !important;}
     .lg-dark-border { border-color: #1a1a1a !important;}
 
     .lg-text-black { color: #000000;}
@@ -576,12 +579,15 @@ body {
 }
 .primary-btn:hover {
     background-color: #DD18DD;
+    border: 2px solid #DD18DD;
 }
 .primary-btn:active {
     background-color: #EA3EEA;
+    border: 2px solid #EA3EEA;
 }
 .primary-btn:disabled, .primary-btn[disabled] {
     background-color: #F49AF4;
+    border: 2px solid #F49AF4;
 }
 
 .ghost-primary-btn {
@@ -693,7 +699,7 @@ body {
 /*------INPUTS-------*/
 .form-input-1 {
     background: #FFFFFF;
-    border: 0.75px solid #076DF320;
+    border: 0.75px solid #CAD4DD;
     outline: none;
 }
 .form-input-1:focus, .form-input-1:hover, .form-input-1:active {
@@ -727,15 +733,15 @@ select {
     appearance: none;
 }
 .input-icon {
-    height: 16px;
-    position: absolute;
-    bottom: 16px;
-    left: 0.9rem;
-}
-.input-icon-2 {
     height: 12px;
     position: absolute;
     bottom: 18px;
+    left: 0.9rem;
+}
+.input-icon-2 {
+    height: 10px;
+    position: absolute;
+    bottom: 19px;
     left: 0.9rem;
 }
 .input-icon-right {
@@ -749,6 +755,7 @@ select {
     bottom: 12px;
     right: 0.9rem;
     cursor: pointer;
+    opacity: 0.4;
 }
 .password-eyes {
     height: 20px;
