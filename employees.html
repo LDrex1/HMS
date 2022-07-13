@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/employee.css">
+
+    <title>Employee Screen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0 py-3 py-md-5 py-lg-0">
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start width-50" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
+                        <img src="img/logo.png" alt="Our Logo" class="h-100">
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    
+                </div>
+            </div>
+            <a href="#" class="navbar-brand height-50px lg-height-75px ms-0 ms-lg-4 ms-xl-5 ">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+
+                <form id="navbar-search" class="d-flex justify-content-between" role="search">
+                    <h2 class="fs-nav-search fw-700  d-none d-lg-block">Employees</h2>
+                    <div class="input-group  ms-3  d-none d-lg-block ">
+                        <input type="search" name="search" id="nav-search" class="form-input-2 nav-search  width-100 fs-copyright py-3 px-5 bdr-rad-2 text-black" placeholder="Search Rooms, Customer etc">
+                        <img src="img/da-search.png" alt="" class="input-icon">
+                    </div>
+                </form>
+
+            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-4 border-end hms-border p-0 m-0">
+
+                <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
+        
+                        <div class="sidenav bg-neutral-4 d-flex flex-column justify-content-between">
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 ">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 active">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                                <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                                    <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                                </a>
+                            </div>
+                            <div class="sidenav-link logout bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                                <a class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                                    <p class="text-grey-1 fs-sidenav error-text text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                                </a>
+                                <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-white border border-secondary p-0">
+                                            <div class="modal-body p-4 p-md-5">
+                                                <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                                <div class="d-flex justify-content-between pt-2 pb-4">
+                                                    <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                    <button type="button" class="primary-btn width-48 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3 my-3">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="main-content col-12 col-lg-10 mt-4">
+                    <form id="navbar-search" class="d-flex  flex-column w-100" role="search">
+                        <h2 class="fs-nav-search fw-700 text-center mb-4 d-block d-lg-none">Employees</h2>
+                        <div class="input-group  ms-3  d-block d-lg-none align-self-center w-70">
+                            <input type="search" name="search" style="width: 50%;"  id="nav-search" class="form-input-2 nav-search  width-100 fs-copyright py-3 px-5 bdr-rad-2 text-black" placeholder="Search Rooms, Customer etc">
+                            <img src="img/da-search.png" alt="" class="input-icon">
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-end w-100 mt-5 pt-3">
+                        <button id="sort-btn-1" class="dropdown-button border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                            <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-4"></i></span></p>
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-end w-100 mb-5 pb-3">
+                        <div class="btn-dropdown-space width-50 position-relative">
+                            <div id="sort-dropdown-1" class="btn-dropdown bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                <ul class="m-0 p-0">
+                                    <li class="d-flex pb-1">
+                                        <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                    </li>
+                                    <li class="d-flex pt-1">
+                                        <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Alphabetical Order</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="d-flex justify-content-start w-100 mb-5 pb-3">
+                            <nav class="nav  em-subnav bdr-rad-2  fw-700 d-flex justify-content-between align-content-center ">
+                                <a class="subnav-link nav-link active " aria-current="page" href="#">All Employees (100)</a>
+                                <a class=" subnav-link nav-link " href="#">Active Employees (50)</a>
+                                <a class="subnav-link  nav-link  d-lg-block d-none" href="#">Inactive Employees (22)</a>
+                            </nav>
+                        </div>
+
+                   <table class="hms-table-1 my-5">
+                        <col width="34%">
+                        <col width="22%">
+                        <col width="22%">
+                        <col width="22%">
+                        <thead>
+                            <tr>
+                                <th class="ps-5">Name</th>
+                                <th>Work Station</th>
+                                <th>Phone Number</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-lg-4 me-2">
+                                            <img src="img/da-emeka-driver.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column text-center align-items-center justify-content-between h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Emeka Ogwo</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Driver</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Logistics</td>
+                                <td>08097899789</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-lucy-chef.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Lucy Adie</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Chef</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Services</td>
+                                <td>09087654321</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-ejima-receptionist.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Ejima Ebiojo</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Receptionist</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hospitality</td>
+                                <td>08123456789</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-favour-receptionist.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Favour David</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Receptionist</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hospitality</td>
+                                <td>08076543212</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-gloria-jmanager.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Gloria Brown</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Junior Manager</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>09134546787</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-kingsley-manager.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Kingsley Tumo</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Manager</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Admin</td>
+                                <td>07078900987</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-elvis-room.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Elvis Matthew</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Room Service</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hospitality</td>
+                                <td>07056789009</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-pauline-room.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Pauline Onu</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Room Service</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hospitality</td>
+                                <td>08166789907</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-joseph-guard.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Joseph John</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Gaurd</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Security</td>
+                                <td>09023546578</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-anna-cleaner.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Anna Banner</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Cleaner</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Hospitality</td>
+                                <td>07009876543</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Active</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center w-100 h-100 ps-3 py-4">
+                                        <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                            <img src="img/da-ridwan-driver.png" alt="emeka-driver" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center text-center h-100">
+                                            <p class="table-guest-name my-auto" role="button" data-bs-toggle="modal" data-bs-target="#adminTableModal">Ridwan Kasim</p>
+                                            <p class="table-guest-title my-auto fs-copyright text-grey-5" >Driver</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Logistics</td>
+                                <td>08097899789</td>
+                                <td>
+                                    <div class="d-flex justify-content-center my-auto"> 
+                                        <p class="text-center ms-auto me-3 text-pink">Inactive</p>
+                                        <button class="status-btn p-0 me-5 ms-4" type="button" role=""><span class=""><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                                     </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>   
+</body>
+</html>

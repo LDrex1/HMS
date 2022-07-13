@@ -19,12 +19,12 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white py-3 py-md-5 py-lg-0">
+        <nav class="navbar navbar-expand-lg bg-white py-3 py-lg-0">
             <div class="container-fluid d-flex justify-content-between px-0">
-                <a class="navbar-brand height-50px md-height-75px me-lg-5 me-xl-5 ms-3 ms-lg-4 ms-xl-5" href="#">
+                <a class="navbar-brand height-50px md-height-75px me-lg-5 me-xl-5 ms-3 ms-md-5 ms-lg-4 ms-xl-5" href="#">
                     <img src="img/logo.png" alt="Our Logo" class="h-100">
                 </a>
-                <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOneContent" aria-controls="navbarOneContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOneContent" aria-controls="navbarOneContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class=""><i class="fa-solid fa-bars text-white"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarOneContent">
@@ -54,16 +54,37 @@
     </header>
     <div class="space py-5 bg-secondary"></div>
     <header>
-        <nav class="navbar bg-transparent py-3 py-md-5 py-lg-0">
-            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-lg-4 ms-xl-5">
+        <nav class="navbar bg-transparent py-3 py-lg-0">
+            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
         </nav>
     </header>
     <div class="space py-5 bg-secondary"></div>
     <header>
-        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0 py-3 py-md-5 py-lg-0">
-            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
+            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="d-none d-lg-flex align-items-center">
+                <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Dashboard</h5>
+                <form action="" method="post">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="nav-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="nav-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-250px xl-width-350px py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
+            </div>
+            <div class="user d-none me-3 me-lg-4 me-xl-5 d-lg-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
                 <span class=""><i class="fa-solid fa-bars text-white"></i></span>
             </button>
               
@@ -77,18 +98,6 @@
                     
                 </div>
             </div>
-            <a href="#" class="navbar-brand height-50px md-height-75px ms-0 ms-lg-4 ms-xl-5">
-                <img src="img/logo.png" alt="Our Logo" class="h-100">
-            </a>
-            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
-                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
-                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
-                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
-                </div>
-                <div class="user-pic">
-                    <img src="img/user-img.png" alt="User image" class="img-fluid">
-                </div>
-            </div>
         </nav>
     </header>
 
@@ -99,45 +108,57 @@
         <!-- Copy the entire main element and delete what's in .main-content if you're building an admin page    -->
 
     <main>
+        <div class="container">
+            <div class="row d-block d-lg-none py-3 py-md-5">
+                <h5 class="fs-headline-3 text-center text-grey-4 fw-700 mb-4">Dashboard</h5>
+                    <form action="" method="post" class="width-100 md-width-75 mx-auto">
+                        <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                            <button type="submit" id="main-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                            <input type="text" id="main-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-95 py-3 pe-3" placeholder="Search rooms, customers, etc">
+                        </div>
+                    </form>
+            </div>
+        </div>
+        
         <div class="row p-0 m-0">
-            <div class="col-lg-2 d-none d-lg-block bg-neutral-4 border-end hms-border p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-5 border-end hms-border p-0 m-0">
 
         <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
 
-                <div class="sidenav bg-neutral-4 d-flex flex-column justify-content-between">
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                <div class="sidenav bg-neutral-5 d-flex flex-column justify-content-between">
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 active">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
-                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
                     </div>
-                    <div class="sidenav-link logout bg-neutral-4 d-flex align-items-center justify-content-center py-2">
-                        <a class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                            <p class="text-grey-1 fs-sidenav error-text text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                    <div class="sidenav-link logout bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                            <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
                         <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
@@ -699,7 +720,7 @@
                         </div>
                         <div class="d-flex justify-content-end w-100 mb-5 pb-3">
                             <div class="btn-dropdown-space width-50 position-relative">
-                                <div id="sort-dropdown-1" class="btn-dropdown bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                <div id="sort-dropdown-1" class="btn-dropdown bg-neutral-6 lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
                                     <ul class="m-0 p-0">
                                         <li class="d-flex pb-1">
                                             <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
