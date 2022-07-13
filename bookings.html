@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Bookings | Kimberly Hotel</title>
+    <title>Guest Registration  | Admin Booking</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -39,14 +39,69 @@
                 <span class=""><i class="fa-solid fa-bars text-white"></i></span>
             </button>
               
-            <div class="offcanvas offcanvas-start width-50" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+            <div class="offcanvas offcanvas-start width-200px" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
                 <div class="offcanvas-header">
-                    <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
-                        <img src="img/logo.png" alt="Our Logo" class="h-100">
-                    </a>
                 </div>
-                <div class="offcanvas-body">
-                    
+                <div class="offcanvas-body p-0">
+                    <div class="user mb-4 ms-2 d-flex align-items-center">
+                        <div class="offcanvas-user-pic width-75px height-75px">
+                            <img src="img/user-img.png" alt="User image" class="img-fluid">
+                        </div>
+                        <div class="user-text d-flex flex-column justify-content-center ms-2">
+                            <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                        </div>
+                    </div>
+                    <div class="sidenav bg-white d-flex flex-column justify-content-between">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="dashboard.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                            <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="guests.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="employees.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="notifications.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1">
+                            <a class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModalNav">
+                                <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            </a>
+                            <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModalNav" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white border border-secondary p-0">
+                                        <div class="modal-body p-4 p-md-5">
+                                            <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                            <div class="d-flex justify-content-between pt-2 pb-4">
+                                                <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -57,47 +112,47 @@
             <div class="col-lg-2 d-none d-lg-block bg-neutral-5 border-end hms-border p-0 m-0">
                 <div class="sidenav bg-neutral-5 d-flex flex-column justify-content-between">
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="dashboard.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
-                        <a href="booking.html" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="bookings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="guests.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="employees.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="notifications.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="settings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
                     </div>
                     <div class="sidenav-link logout bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                        <a class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
                             <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
-                        <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                        <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content bg-white border border-secondary p-0">
                                     <div class="modal-body p-4 p-md-5">
                                         <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
                                         <div class="d-flex justify-content-between pt-2 pb-4">
                                             <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
-                                            <button type="button" class="primary-btn width-48 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3 my-3">Yes</button>
+                                            <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
                                         </div>
                                     </div>
                                 </div>

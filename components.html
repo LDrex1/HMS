@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-white py-3 py-lg-0">
             <div class="container-fluid d-flex justify-content-between px-0">
-                <a class="navbar-brand height-50px md-height-75px me-lg-5 me-xl-5 ms-3 ms-md-5 ms-lg-4 ms-xl-5" href="#">
+                <a href="index.html" class="navbar-brand height-50px md-height-75px me-lg-5 me-xl-5 ms-3 ms-md-5 ms-lg-4 ms-xl-5">
                     <img src="img/logo.png" alt="Our Logo" class="h-100">
                 </a>
                 <button class="navbar-toggler bg-pink-1 py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOneContent" aria-controls="navbarOneContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
     <div class="space py-5 bg-secondary"></div>
     <header>
         <nav class="navbar bg-transparent py-3 py-lg-0">
-            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
         </nav>
@@ -63,12 +63,12 @@
     <div class="space py-5 bg-secondary"></div>
     <header>
         <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
-            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
             <div class="d-none d-lg-flex align-items-center">
                 <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Dashboard</h5>
-                <form action="" method="post">
+                <form id="nav-search-form" action="" method="post">
                     <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
                         <button type="submit" id="nav-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
                         <input type="text" id="nav-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-250px xl-width-350px py-3 pe-3" placeholder="Search rooms, customers, etc">
@@ -88,14 +88,69 @@
                 <span class=""><i class="fa-solid fa-bars text-white"></i></span>
             </button>
               
-            <div class="offcanvas offcanvas-start width-50" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+            <div class="offcanvas offcanvas-start width-200px" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
                 <div class="offcanvas-header">
-                    <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
-                        <img src="img/logo.png" alt="Our Logo" class="h-100">
-                    </a>
                 </div>
-                <div class="offcanvas-body">
-                    
+                <div class="offcanvas-body p-0">
+                    <div class="user mb-4 ms-2 d-flex align-items-center">
+                        <div class="offcanvas-user-pic width-75px height-75px">
+                            <img src="img/user-img.png" alt="User image" class="img-fluid">
+                        </div>
+                        <div class="user-text d-flex flex-column justify-content-center ms-2">
+                            <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                        </div>
+                    </div>
+                    <div class="sidenav bg-white d-flex flex-column justify-content-between">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="dashboard.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="guests.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                            <a href="employees.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="notifications.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1">
+                            <a class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModalNav">
+                                <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            </a>
+                            <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModalNav" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white border border-secondary p-0">
+                                        <div class="modal-body p-4 p-md-5">
+                                            <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                            <div class="d-flex justify-content-between pt-2 pb-4">
+                                                <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -111,12 +166,12 @@
         <div class="container">
             <div class="row d-block d-lg-none py-3 py-md-5">
                 <h5 class="fs-headline-3 text-center text-grey-4 fw-700 mb-4">Dashboard</h5>
-                    <form action="" method="post" class="width-100 md-width-75 mx-auto">
-                        <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
-                            <button type="submit" id="main-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
-                            <input type="text" id="main-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-95 py-3 pe-3" placeholder="Search rooms, customers, etc">
-                        </div>
-                    </form>
+                <form id="main-search-form" action="" method="post" class="width-100 mx-auto">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="main-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="main-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-95 py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
             </div>
         </div>
         
@@ -127,47 +182,47 @@
 
                 <div class="sidenav bg-neutral-5 d-flex flex-column justify-content-between">
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="dashboard.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
-                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
+                        <a href="bookings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="guests.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="employees.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="notifications.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                         </a>
                     </div>
                     <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a href="#" class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98">
+                        <a href="settings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
                     </div>
                     <div class="sidenav-link logout bg-neutral-5 d-flex align-items-center justify-content-start my-1">
-                        <a class="text-decoration-none bg-neutral-5 ps-lg-2 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                        <a class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
                             <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
-                        <div class="modal" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                        <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content bg-white border border-secondary p-0">
                                     <div class="modal-body p-4 p-md-5">
                                         <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
                                         <div class="d-flex justify-content-between pt-2 pb-4">
                                             <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
-                                            <button type="button" class="primary-btn width-48 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3 my-3">Yes</button>
+                                            <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -714,13 +769,13 @@
                         <h6 class="fs-body-1 fw-700 text-grey-1 text-center mb-5">Table Variations</h6>
 
                         <div class="d-flex justify-content-end w-100 mt-5 pt-3">
-                            <button id="sort-btn-1" class="dropdown-button border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                            <button id="sort-btn-1" class="dropdown-button bg-white border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
                                 <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-4"></i></span></p>
                             </button>
                         </div>
                         <div class="d-flex justify-content-end w-100 mb-5 pb-3">
                             <div class="btn-dropdown-space width-50 position-relative">
-                                <div id="sort-dropdown-1" class="btn-dropdown bg-neutral-6 lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                <div id="sort-dropdown-1" class="btn-dropdown bg-white lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
                                     <ul class="m-0 p-0">
                                         <li class="d-flex pb-1">
                                             <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
@@ -906,7 +961,7 @@
 
                 <!-- **************************END OF MAIN SECTION**************************** -->
 
-    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
+    <footer id="main-footer" class=" bg-neutral-footer text-white">
         <div class="container">
             <div class="row py-5">
                 <div class="col-lg-4 col-md-12 mt-5">
@@ -914,10 +969,10 @@
                         <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
                         <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
                     </div>
-                    <form action="" method="post">
+                    <form id="footer-search-form" action="" method="post">
                         <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
-                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
-                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                            <input type="text" id="footer-search-input" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <button type="submit" id="footer-search-btn" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
                         </div>
                     </form>
                     
@@ -926,35 +981,35 @@
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
                     
-                    <h6 class="fs-input mb-3">Restaurants</h6>
-                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
-                    <h6 class="fs-input mb-3">Events</h6>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Restaurants</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Rooms and Suites</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Events</h6></a>
                     
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Company</h5>
                     
-                    <h6 class="fs-input mb-2">About us</h6>
-                    <h6 class="fs-input mb-2">Blog</h6>
-                    <h6 class="fs-input mb-2">Contact us</h6>
-                    <h6 class="fs-input mb-4">Services</h6>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">About us</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Blog</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Contact us</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Services</h6></a>
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Support</h5>
                     
-                    <h6 class="fs-input mb-2">Support center</h6>
-                    <h6 class="fs-input mb-2">FAQ</h6>
-                    <h6 class="fs-input mb-2">Privacy Policy</h6>
-                    <h6 class="fs-input mb-4">Terms of service</h6>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Support center</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">FAQ</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Privacy Policy</h6></a>
+                    <a href="#" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Terms of service</h6></a>
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
-                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
-                    <i class="fa-brands fa-twitter me-4"></i>
-                    <i class="fa-brands fa-facebook-square"></i>
+                    <a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-instagram me-4 mb-5"></i></a>
+                    <a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-twitter me-4"></i></a>
+                    <a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-facebook-square"></i></a>
                 </div>
 
             </div>
