@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/settings.css">
 
-    <title>Guest Registration  | Admin Booking</title>
+    <title>Admin Settings | Kimberly Hotel</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -25,7 +26,7 @@
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
             <div class="d-none d-lg-flex align-items-center">
-                <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Bookings</h5>
+                <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Admin Settings</h5>
             </div>
             <div class="user d-none me-3 me-lg-4 me-xl-5 d-lg-flex align-items-center">
                 <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
@@ -59,7 +60,7 @@
                                 <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                             </a>
                         </div>
-                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
                             <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
                                 <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
                             </a>
@@ -79,7 +80,7 @@
                                 <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                             </a>
                         </div>
-                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
                             <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
                                 <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                             </a>
@@ -117,7 +118,7 @@
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
                         <a href="bookings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
                         </a>
@@ -137,7 +138,7 @@
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                         </a>
                     </div>
-                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
                         <a href="settings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
                             <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
@@ -163,80 +164,101 @@
                 </div>
             </div>
 
-
             <div class="main-content col-12 col-lg-10 p-0 m-0">
                 <div class="container py-4 px-3">
-                    <div class="content-box-2 bg-white border-none lg-border bdr-width-1 box-shad-none lg-box-shad-content hms-border py-4 px-1 px-lg-5">
-                        <div class="width-100 md-width-80 lg-width-70 mx-auto">
-                            <h6 class="fs-content-header text-grey-1 fw-700 text-center mb-4">Guest's Registration Form</h6>
-                            <div class="input-group d-flex justify-content-between">
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">First Name</p>
-                                    <input type="text" name="first-name" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
+                    <div class="tab-btns-row order-1 order-lg-2 mb-3 mt-5">
+                        <div class="tabs-subnav d-flex justify-content-between align-items-center width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-50 xl-width-45">
+                            <button class="tabs-subnav-item settings-tab-btn border-none lg-border bdr-width-1 hms-border bg-white text-grey-1 fw-700 text-center fs-tab position-relative px-1 px-lg-3 py-0 py-lg-3 bdr-rad-2 current" data-page="#change-password">Change Password</button>
+                            <button class="tabs-subnav-item settings-tab-btn border-none lg-border bdr-width-1 hms-border bg-white text-grey-1 fw-700 text-center fs-tab position-relative px-1 px-lg-3 py-0 py-lg-3 bdr-rad-2" data-page="#edit-profile">Edit Profile</button>
+                        </div>
+                    </div>
+                    <div id="change-password" class="w-100 settings-tab-page lg-bg-neutral-4 py-3 px-1 p-lg-3">
+                        <div class="lg-bg-white p-0 p-lg-3">
+                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">Current Password</p>
+                                    <input type="password" name="current-password" id="current-password" class="form-input-1 box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Current Password">
+                                    <img src="img/password-input.png" alt="" class="input-icon d-lg-none">
+                                    <div id="password-toggler1" class="password-toggler" role="button" onclick="passwordToggleCurrent()">
+                                        <img src="img/eye-open.png" id="eye-open1" class="password-eyes eye-open">
+                                        <img src="img/eye-closed.png" id="eye-closed1" class="password-eyes eye-closed">
+                                    </div>
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">Last Name</p>
-                                    <input type="text" name="last-name" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">New Password</p>
+                                    <input type="password" name="new-password" id="new-password" class="form-input-1 box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="New Password">
+                                    <img src="img/password-input.png" alt="" class="input-icon d-lg-none">
+                                    <div id="password-toggler2" class="password-toggler" role="button" onclick="passwordToggleNew()">
+                                        <img src="img/eye-open.png" id="eye-open2" class="password-eyes eye-open">
+                                        <img src="img/eye-closed.png" id="eye-closed2" class="password-eyes eye-closed">
+                                    </div>
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                            </div>
-                            <div class="input-group d-flex justify-content-between">
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">Phone</p>
-                                    <input type="text" name="phone" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">Confirm Password</p>
+                                    <input type="password" name="confirm-password" id="confirm-password" class="form-input-1 box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Confirm Password">
+                                    <img src="img/password-input.png" alt="" class="input-icon d-lg-none">
+                                    <div id="password-toggler2" class="password-toggler" role="button" onclick="passwordToggleConfirm()">
+                                        <img src="img/eye-open.png" id="eye-open3" class="password-eyes eye-open">
+                                        <img src="img/eye-closed.png" id="eye-closed3" class="password-eyes eye-closed">
+                                    </div>
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">Email Address</p>
-                                    <input type="email" name="email" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
-                                    
+                                <div>
+                                    <input type="submit" id="submit-btn-password" value="Update Password" class="primary-btn py-3 box-shad-1 bdr-rad-2 width-100 fs-copyright fw-700 mb-4">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="edit-profile" class="w-100 settings-tab-page lg-bg-neutral-4 py-3 px-1 p-lg-3 hide">
+                        <div class="lg-bg-white p-0 p-lg-3 mb-5">
+                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">First Name</p>
+                                    <input type="text" name="first-name" id="first-name" class="form-input-1 profile-input box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Ife">
+                                    <img src="img/name-input.png" alt="" class="input-icon d-lg-none">
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                            </div>
-                            <div class="input-group width-100 mt-2 mb-4 position-relative">
-                                <p class="fs-form-input mb-1">Address</p>
-                                <input type="text" name="address-1" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 width-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
-                                <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
-                            </div>
-
-                            <div class="input-group d-flex justify-content-between">
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">State</p>
-                                    <input type="text" name="state" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">Last Name</p>
+                                    <input type="text" name="last-name" id="last-name" class="form-input-1 profile-input box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Tobenna">
+                                    <img src="img/name-input.png" alt="" class="input-icon d-lg-none">
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                                <div class="short-input width-100 lg-width-48 mt-2 mb-4 position-relative">
-                                    <p class="fs-form-input mb-1">City</p>
-                                    <input type="text" name="city" id="" class="form-input-3 border-none lg-border hms2-border bdr-width-75 box-shad-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black">
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">Email</p>
+                                    <input type="email" name="email" id="email" class="form-input-1 profile-input box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="ifetobenna@gmail.com">
+                                    <img src="img/password-input.png" alt="" class="input-icon d-lg-none">
                                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                            </div>
-                            <div class="d-flex flex-column align-items-center align-items-lg-start w-100">
-                                <p class="fs-form-input mb-1 me-2">Payment Method</p>
-                                <div class="input-group w-auto mt-2 mb-1">
-                                    <label for="" class="p-0 m-0 me-4 h-50 mb-3">
-                                        <div class="d-flex align-items-center justify-content-center p-0">
-                                            <div class="radio-wrap d-flex align-items-center justify-content-center rounded-circle width-25px height-25px border dark-border bg-neutral-4 p-0 m-0">
-                                                <input type="radio" name="test" id="" class="m-0">
-                                            </div>
-                                            <p class="fs-form-input m-0 ps-2">POS</p>
-                                        </div>
-                                    </label>
-                                    <label for="" class="p-0 m-0 h-50">
-                                        <div class="d-flex align-items-center justify-content-center p-0">
-                                            <div class="radio-wrap d-flex align-items-center justify-content-center rounded-circle width-25px height-25px border dark-border bg-neutral-4 p-0 m-0">
-                                                <input type="radio" name="test" id="" class="m-0">
-                                            </div>
-                                            <p class="fs-form-input m-0 ps-2">Cash</p>
-                                        </div>
-                                    </label>
+                                <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
+                                    <p class="fs-settings-label mb-1">Position</p>
+                                    <input type="text" name="position" id="position" class="form-input-1 profile-input box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Receptionist">
+                                    <img src="img/name-input.png" alt="" class="input-icon d-lg-none">
+                                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                                 </div>
-                            </div>
-                            <div class="d-flex flex-column flex-lg-row justify-content-between w-100">
-                                <button class="width-100 lg-width-48 order-2 order-lg-1 box-shad-content lg-box-shad-none text-center fs-copyright fw-700 text-pink border-none lg-border hms-border lg-bdr-width-2 bdr-rad-2 bg-white py-3 my-3" onclick="history.back()">Back</button>
-                                <button class="width-100 primary-btn lg-width-48 order-1 order-lg-2 box-shad-content lg-box-shad-none text-center fs-copyright fw-700 text-white bdr-rad-2 py-3 my-3">Book Now</button>
-                            </div>
+                                <div>
+                                    <input type="submit" id="submit-btn-profile" value="Save Changes" class="primary-btn py-3 box-shad-1 bdr-rad-2 width-100 fs-copyright fw-700 mb-4">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="w-auto bg-white d-none d-lg-inline-block bdr-rad-2 box-shad-1 border hms-border py-3 px-5 me-auto my-4">
+                            <p class="fs-body-2 fw-700 text-grey-1 p-0 m-0">Profile Picture</p>
+                        </div>
+                        <div class="lg-bg-white p-0 p-lg-3">
+                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                                <div class="d-flex justify-content-start mb-4">
+                                    <div class="ratio ratio-1x1 width-150px rounded-circle">
+                                        <img src="img/mt-dp.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <p class="fs-body-1 text-grey-2 mb-2">New Profile Picture</p>
+                                <div class="d-flex justify-content-start align-items-center mb-4">
+                                    <input type="file" src="" class="bg-neutral-3 py-3 px-5 fs-form-input bdr-rad-2" placeholder="Choose Image">
+                                    <input type="text" name="image-name" id="image-name" class="fs-body-1 px-5 py-3 bdr-rad-2" value="No File Chosen" disabled>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -244,8 +266,33 @@
         </div>
     </main>
 
+<div class="container mt-3 change-pw bg-neutral-4 mx-3 w-70 tab-page hide" id="edit-password">
+    <div class="password p-4">
+      <div class="pass lg-bg-white">
+        <form action="post" class="mx-3">
+        
+      <div class="picture lg-bg-white mt-3 p-4">
+        <img src="./img/mt-dp.png" class="rounded mx-3">
+        <p class=" mx-3">New Profile Picture</p>
+        <div class="mx-3">
+           <button class="fs-body-2 opacity-50 ff-montserrat mt-5 p-3 bdr-rad-2 width-300px lg-bg-neutral-3">Choose File</button>
+           <button class="fs-body-2 opacity-50 ff-montserrat width-300px lg-bg-white mt-5 p-3">No file chosen</button>
+        </div>
+        <input type="submit" value="Change Profile Picture" class="primary-btn mx-3 mt-5 p-3 box-shad-1 bdr-rad-2 width-300px fs-body-2 fw-700 ff-montserrat fw-bold mb-5">
+      </div>
+    </div>
+  </div>
+
+
     <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -31,26 +31,32 @@
             <div class="admin-signup width-100 md-width-75 lg-width-50 mx-auto py-0 py-md-5 px-2 px-md-4 px-lg-5 bg-neutral-4 my-0 my-sm-5">
                 <h6 class="text-center fs-headline-3 fw-700 text-grey-1 width-100 mb-5 mb-sm-4">Create Admin Account</h6>
                 <div class="input-group width-100 mb-3">
-                    <p class="fs-form-input mb-1 fw-500 ">Full Name</p>
-                    <input type="text" name="name" id="admin-signup-fname" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black  bdr-rad-2" placeholder="Full Name">
+                    <p class="fs-form-input mb-1 fw-500 ">First Name</p>
+                    <input type="text" name="firstname" id="admin-signup-firstname" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black  bdr-rad-2" placeholder="First Name">
+                    <img src="img/name-input.png" alt="" class="input-icon">
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+                <div class="input-group width-100 mb-3">
+                    <p class="fs-form-input mb-1 fw-500 ">Last Name</p>
+                    <input type="text" name="lastname" id="admin-signup-lastname" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black  bdr-rad-2" placeholder="Last Name">
                     <img src="img/name-input.png" alt="" class="input-icon">
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
                 <div class="input-group width-100 mb-3">
                     <p class="fs-form-input mb-1 fw-500">Email</p>
-                    <input type="Email" name="Email" id="admin-signup-email" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Email">
+                    <input type="email" name="email" id="admin-signup-email" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Email">
                     <img src="img/email-input.png" alt="" class="input-icon">
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
                 <div class="input-group width-100 mb-3">
                     <p class="fs-form-input mb-1 fw-500">Position </p>
-                    <input type="text" name="Position " id="admin-signup-position" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Position ">
+                    <input type="text" name="position " id="admin-signup-position" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Position ">
                     <img src="img/name-input.png" alt="" class="input-icon">
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
                 <div class="input-group width-100 mb-3 position-relative">
                     <p class="fs-form-input mb-1 fw-500">Password</p>
-                    <input type="Password" name="Password" id="password1" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Password">
+                    <input type="Password" name="password" id="password1" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Password">
                     <img src="img/password-input.png" alt="" class="input-icon">
                     <div id="password-toggler1" class="password-toggler" role="button" onclick="passwordToggle()">
                         <img src="img/eye-open.png" id="eye-open1" class="password-eyes eye-open">
@@ -60,8 +66,8 @@
                 </div>
                 <div class="input-group width-100 mb-3 position-relative">
                     <p class="fs-form-input mb-1 fw-500">Confirm Password</p>
-                    <input type="password" name="Confirm Password" id="password2" class="form-input-1 admin-signup-input width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Confirm Password">
-                    <img src="img/email-input.png" alt="" class="input-icon">
+                    <input type="password" name="confirmpassword" id="password2" class="form-input-1 admin-signup-input width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Confirm Password">
+                    <img src="img/password-input.png" alt="" class="input-icon">
                     <div id="password-toggler2" class="password-toggler" role="button" onclick="passwordToggleTwo()">
                         <img src="img/eye-open.png" id="eye-open2" class="password-eyes eye-open">
                         <img src="img/eye-closed.png" id="eye-closed2" class="password-eyes eye-closed">

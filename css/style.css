@@ -382,6 +382,60 @@ body {
 .height-200px { height: 200px !important;}
 .height-250px { height: 250px !important;}
 
+@media only screen and (min-width: 576px) {
+    .sm-width-5 { width: 5%;}
+    .sm-width-10 { width: 10%;}
+    .sm-width-15 { width: 15%;}
+    .sm-width-20 { width: 20%;}
+    .sm-width-25 { width: 25%;}
+    .sm-width-30 { width: 30%;}
+    .sm-width-33 { width: 33%;}
+    .sm-width-33-third { width: 33.333%;}
+    .sm-width-40 { width: 40%;}
+    .sm-width-42 { width: 42%;}
+    .sm-width-45 { width: 45%;}
+    .sm-width-48 { width: 48%;}
+    .sm-width-49 { width: 49%;}
+    .sm-width-50 { width: 50%;}
+    .sm-width-51 { width: 51%;}
+    .sm-width-52 { width: 52%;}
+    .sm-width-60 { width: 60%;}
+    .sm-width-70 { width: 70%;}
+    .sm-width-75 { width: 75%;}
+    .sm-width-80 { width: 80%;}
+    .sm-width-85 { width: 85%;}
+    .sm-width-90 { width: 90%;}
+    .sm-width-95 { width: 95%;}
+    .sm-width-98 { width: 98%;}
+    .sm-width-99 { width: 99%;}
+    .sm-width-100 { width: 100%;}
+
+    .sm-width-25px { width: 25px !important;}
+    .sm-width-30px { width: 30px !important;}
+    .sm-width-35px { width: 35px !important;}
+    .sm-width-40px { width: 40px !important;}
+    .sm-width-50px { width: 50px !important;}
+    .sm-width-75px { width: 75px !important;}
+    .sm-width-100px { width: 100px !important;}
+    .sm-width-150px { width: 150px !important;}
+    .sm-width-200px { width: 200px !important;}
+    .sm-width-250px { width: 250px !important;}
+    .sm-width-300px { width: 300px !important;}
+    .sm-width-350px { width: 350px !important;}
+    .sm-width-400px { width: 400px !important;}
+
+    .sm-height-25px { height: 25px !important;}
+    .sm-height-30px { height: 30px !important;}
+    .sm-height-35px { height: 35px !important;}
+    .sm-height-40px { height: 40px !important;}
+    .sm-height-50px { height: 50px !important;}
+    .sm-height-75px { height: 75px !important;}
+    .sm-height-100px { height: 100px !important;}
+    .sm-height-150px { height: 150px !important;}
+    .sm-height-200px { height: 200px !important;}
+    .sm-height-250px { height: 250px !important;}
+}
+
 @media only screen and (min-width: 768px) {
     .md-width-5 { width: 5%;}
     .md-width-10 { width: 10%;}

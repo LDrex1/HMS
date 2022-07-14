@@ -1,0 +1,86 @@
+.fs-tab {
+  font-size: 20px;
+  line-height: 24px;
+}
+.fs-settings-label {
+  font-size: 20px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 991.99px) {
+  .fs-tab {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .fs-settings-label {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media only screen and (max-width: 349.99px) {
+  .fs-tab {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.settings-tab-btn {
+  outline: none;
+}
+.settings-tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #AF13AF;
+  transition: width 500ms ease-in-out;
+}
+.settings-tab-btn.current::after {
+  width: 100%;
+}
+.settings-tab-page.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 992px){
+ .profile-input::placeholder{
+  color: #FFFFFF;
+}
+.edit{
+  border: 1px solid lightgray;
+} 
+.pw{
+  display: all;
+}
+}
+
+/* .change{
+  border-bottom: 10px solid rgba(175, 19, 175, 1);
+} */
+.change-pw{
+  position: absolute;
+  width:1085px; 
+  height:1395px;
+}
+.dashboard{
+  height:1395px;
+}
+.pass{
+  height:634px;
+}
+.nothing{
+  margin-bottom: 700px !important;
+}
+
+@media only screen and (max-width:426px){
+  /* .change-pw{
+    display: none;
+  } */
+  .label{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

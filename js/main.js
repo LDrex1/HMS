@@ -32,6 +32,23 @@ function passwordToggleTwo(){
   }
 }
 
+function passwordToggleThree(){
+  var input = document.getElementById("password3");
+  var eyeOpen = document.getElementById("eye-open3");
+  var eyeClosed = document.getElementById("eye-closed3");
+
+  if (input.type ==="password"){
+    input.type = "text";
+    eyeClosed.style.display = "none";
+    eyeOpen.style.display = "block";
+  }
+  else{
+    input.type = "password";
+    eyeOpen.style.display = "none";
+    eyeClosed.style.display = "block";  
+  }
+}
+
 $(document).ready(function(){
   $("body").on("click",".table-guest-name",function(){
     $("#adminTableModal").addClass("position-absolute");
