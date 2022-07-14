@@ -51,6 +51,8 @@ function passwordToggleCurrent(){
 
 let settingsTabBtns = document.querySelectorAll('.settings-tab-btn');
 let settingsTabPages = document.querySelectorAll('.settings-tab-page');
+let editProfilePage = document.querySelector('#edit-profile');
+let mobilePictureBtnWrap = document.querySelector('.mobile-picture-btn-wrap');
 
 settingsTabBtns.forEach(tabBtn => {
   tabBtn.addEventListener("click",function() {
@@ -63,5 +65,95 @@ settingsTabBtns.forEach(tabBtn => {
 
     tabBtn.classList.add('current');
     pageTarget.classList.remove('hide');
+
+    
+    
+    if (tabBtn.dataset.page === "#edit-profile") {
+      mobilePictureBtnWrap.classList.remove("hide");
+    } else {
+      mobilePictureBtnWrap.classList.add("hide");
+    }
   })
 })
+
+let input = document.querySelector('#profile-picture');
+let pictureName = document.querySelector('#image-name');
+let image = document.querySelector('#profile-img-desktop');
+
+input.addEventListener('change', updateImageName);
+
+function updateImageName() {
+  const curFiles = input.files;
+  
+  
+  if(curFiles.length === 0) {
+    pictureName.textContent = 'No files currently selected for upload';
+  } else {
+    
+    for(const file of curFiles) {
+      
+      if(validFileType(file)) {
+        if (file.name.length > 25) {
+          pictureName.textContent = `${file.name.slice(0, 25)}..., ${returnFileSize(file.size)}.`;
+        } else {
+          pictureName.textContent = `${file.name}, ${returnFileSize(file.size)}.`;
+        }
+        image.src = URL.createObjectURL(file);
+        
+      } else {
+        pictureName.textContent = `Not a valid file type. Update your selection.`;
+      }
+    }
+  }
+}
+
+let mobileInput = document.querySelector('#profile-picture-mobile');
+let mobilePictureName = document.querySelector('#image-name-mobile');
+let mobileImage = document.querySelector('#profile-img-mobile');
+
+mobileInput.addEventListener('change', updateImageName);
+
+function updateImageName() {
+  const curFiles = mobileInput.files;
+  
+  
+  if(curFiles.length === 0) {
+    mobilePictureName.textContent = 'No files currently selected for upload';
+  } else {
+    
+    for(const file of curFiles) {
+      
+      if(validFileType(file)) {
+        if (file.name.length > 15) {
+          mobilePictureName.textContent = `${file.name.slice(0, 15)}..., ${returnFileSize(file.size)}.`;
+        } else {
+          mobilePictureName.textContent = `${file.name}, ${returnFileSize(file.size)}.`;
+        }
+        mobileImage.src = URL.createObjectURL(file);
+        
+      } else {
+        mobilePictureName.textContent = `Not a valid file type. Update your selection.`;
+      }
+    }
+  }
+}
+
+const fileTypes = [
+  "image/jpeg",
+  "image/jpg",
+  "image/png"
+];
+
+function validFileType(file) {
+  return fileTypes.includes(file.type);
+}
+
+function returnFileSize(number) {
+  if(number < 1024) {
+    return number + 'bytes';
+  } else if(number >= 1024 && number < 1048576) {
+    return (number/1024).toFixed(1) + 'KB';
+  } else if(number >= 1048576) {
+    return (number/1048576).toFixed(1) + 'MB';
+  }
+}

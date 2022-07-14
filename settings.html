@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-bottom hms-border m-0 p-0 py-3 py-lg-2">
+        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
             <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
@@ -166,7 +166,54 @@
 
             <div class="main-content col-12 col-lg-10 p-0 m-0">
                 <div class="container py-4 px-3">
-                    <div class="tab-btns-row order-1 order-lg-2 mb-3 mt-5">
+                    <div class="mobile-img-block d-flex d-lg-none justify-content-center mt-0">
+                        <div class="rounded-circle width-80px height-80px sm-width-100px sm-height-100px md-width-150px md-height-150px position-relative">
+                            <img src="img/mt-dp.png" alt="user image" id="mobile-user-img" class="img-fluid">
+                            <div  id="mobile-picture-btn-wrap" class="mobile-picture-btn-wrap mobile-camera-icon position-absolute hide">
+                                <div id="mobile-picture-btn" class="d-flex align-items-center justify-content-center rounded-circle width-35px md-width-50px height-35px md-height-50px bg-pink-1" role="button" data-bs-toggle="modal" data-bs-target="#pictureChangeModal">
+                                    <img src="img/camera-icon.png" alt="">
+                                </div>
+                                <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="pictureChangeModal" tabindex="-1" aria-label="Change Profile Picture" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-white border hms-border p-0">
+                                            <div class="d-flex justify-content-end pe-2 py-3">
+                                                <button type="button" class=" modal-close bg-white border-none" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span class="iconify" data-icon="clarity:window-close-line" data-width="36" data-height="36"></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body p-4 pt-0 p-md-5">
+                                                <form id="profile-change-mobile" method="" enctype="multipart/form-data" class="width-100">
+                                                    <div class="d-flex justify-content-center mb-4">
+                                                        <div class="ratio ratio-1x1 width-150px rounded-circle">
+                                                            <img id="profile-img-mobile" src="img/mt-dp.png" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                    <p class="fs-body-1 text-grey-1 mb-2">New Profile Picture</p>
+                                                    <div class="d-flex flex-column mb-4">
+                                                        <label for="profile-picture-mobile" class="w-100 bg-neutral-3 text-nowrap py-3 px-3 bdr-rad-2 mb-3">
+                                                            <p class="fs-sidenav m-0 text-nowrap text-center mx-5">Choose Image</p>
+                                                            <input type="file" accept="image/png, image/jpeg" id="profile-picture-mobile" name="profile-picture-mobile" class="form-input-1 bg-neutral-3 py-3 px-5 fs-sidenav bdr-rad-2">
+                                                        </label>
+                                                        <div class="w-100 py-3 px-0 bg-white border d-inline-block hms2-border bdr-rad-2">
+                                                            <p id="image-name-mobile" class="text-grey-1 text-center fs-sidenav text-nowrap m-0 p-0">No File Selected</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="submit" id="submit-btn-picture-mobile" value="Change Profile Picture" class="primary-btn py-3 box-shad-1 bdr-rad-2 width-100 fs-copyright fw-700 mb-4">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-text d-flex d-lg-none flex-column justify-content-center mt-3 mb-4">
+                        <h6 class="text-pink fs-body-2 text-center fw-700 m-0">Kingston I.</h6>
+                        <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                    </div>
+                    <div class="tab-btns-row order-1 order-lg-2 mb-3 mt-4 mt-lg-5">
                         <div class="tabs-subnav d-flex justify-content-between align-items-center width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-50 xl-width-45">
                             <button class="tabs-subnav-item settings-tab-btn border-none lg-border bdr-width-1 hms-border bg-white text-grey-1 fw-700 text-center fs-tab position-relative px-1 px-lg-3 py-0 py-lg-3 bdr-rad-2 current" data-page="#change-password">Change Password</button>
                             <button class="tabs-subnav-item settings-tab-btn border-none lg-border bdr-width-1 hms-border bg-white text-grey-1 fw-700 text-center fs-tab position-relative px-1 px-lg-3 py-0 py-lg-3 bdr-rad-2" data-page="#edit-profile">Edit Profile</button>
@@ -174,7 +221,7 @@
                     </div>
                     <div id="change-password" class="w-100 settings-tab-page lg-bg-neutral-4 py-3 px-1 p-lg-3">
                         <div class="lg-bg-white p-0 p-lg-3">
-                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                            <form method="" enctype="multipart/form-data" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
                                 <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
                                     <p class="fs-settings-label mb-1">Current Password</p>
                                     <input type="password" name="current-password" id="current-password" class="form-input-1 box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Current Password">
@@ -213,7 +260,7 @@
                     </div>
                     <div id="edit-profile" class="w-100 settings-tab-page lg-bg-neutral-4 py-3 px-1 p-lg-3 hide">
                         <div class="lg-bg-white p-0 p-lg-3 mb-5">
-                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                            <form method="" enctype="multipart/form-data" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
                                 <div class="input-group width-100 mt-2 mb-4 mb-lg-5 position-relative">
                                     <p class="fs-settings-label mb-1">First Name</p>
                                     <input type="text" name="first-name" id="first-name" class="form-input-1 profile-input box-shad-none lg-box-shad-1 border dark-border lg-hms2-border w-100 fs-form-input bdr-rad-2 py-3 px-5 px-lg-3 mt-1 text-black" placeholder="Ife">
@@ -246,17 +293,25 @@
                         <div class="w-auto bg-white d-none d-lg-inline-block bdr-rad-2 box-shad-1 border hms-border py-3 px-5 me-auto my-4">
                             <p class="fs-body-2 fw-700 text-grey-1 p-0 m-0">Profile Picture</p>
                         </div>
-                        <div class="lg-bg-white p-0 p-lg-3">
-                            <form action="post" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
+                        <div class="d-none d-lg-block lg-bg-white p-0 p-lg-3">
+                            <form method="" enctype="multipart/form-data" class="width-100 sm-width-80 md-width-70 mx-sm-auto mx-md-auto ms-lg-0 me-lg-auto lg-width-45 xl-width-40">
                                 <div class="d-flex justify-content-start mb-4">
                                     <div class="ratio ratio-1x1 width-150px rounded-circle">
-                                        <img src="img/mt-dp.png" alt="" class="img-fluid">
+                                        <img id="profile-img-desktop" src="img/mt-dp.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
-                                <p class="fs-body-1 text-grey-2 mb-2">New Profile Picture</p>
+                                <p class="fs-body-1 text-grey-2 mb-1">New Profile Picture</p>
                                 <div class="d-flex justify-content-start align-items-center mb-4">
-                                    <input type="file" src="" class="bg-neutral-3 py-3 px-5 fs-form-input bdr-rad-2" placeholder="Choose Image">
-                                    <input type="text" name="image-name" id="image-name" class="fs-body-1 px-5 py-3 bdr-rad-2" value="No File Chosen" disabled>
+                                    <label for="profile-picture" class="w-auto bg-neutral-3 text-nowrap py-3 px-3 bdr-rad-2">
+                                        <p class="fs-sidenav m-0 text-nowrap mx-5">Choose Image</p>
+                                        <input type="file" accept="image/png, image/jpeg" id="profile-picture" name="profile-picture" class="form-input-1 bg-neutral-3 py-3 px-5 fs-sidenav bdr-rad-2">
+                                    </label>
+                                    <div class="w-auto py-3 px-5 bg-white border d-inline-block hms2-border bdr-rad-2">
+                                        <p id="image-name" class="text-grey-1 text-center fs-sidenav text-nowrap mx-lg-3 mx-xl-5 my-0 p-0">No File Selected</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" id="submit-btn-picture" value="Change Profile Picture" class="primary-btn py-3 box-shad-1 bdr-rad-2 width-100 fs-copyright fw-700 mb-4">
                                 </div>
                             </form>
                         </div>
@@ -265,24 +320,6 @@
             </div>
         </div>
     </main>
-
-<div class="container mt-3 change-pw bg-neutral-4 mx-3 w-70 tab-page hide" id="edit-password">
-    <div class="password p-4">
-      <div class="pass lg-bg-white">
-        <form action="post" class="mx-3">
-        
-      <div class="picture lg-bg-white mt-3 p-4">
-        <img src="./img/mt-dp.png" class="rounded mx-3">
-        <p class=" mx-3">New Profile Picture</p>
-        <div class="mx-3">
-           <button class="fs-body-2 opacity-50 ff-montserrat mt-5 p-3 bdr-rad-2 width-300px lg-bg-neutral-3">Choose File</button>
-           <button class="fs-body-2 opacity-50 ff-montserrat width-300px lg-bg-white mt-5 p-3">No file chosen</button>
-        </div>
-        <input type="submit" value="Change Profile Picture" class="primary-btn mx-3 mt-5 p-3 box-shad-1 bdr-rad-2 width-300px fs-body-2 fw-700 ff-montserrat fw-bold mb-5">
-      </div>
-    </div>
-  </div>
-
 
     <script src="js/bootstrap.js"></script>
     <script src="js/aos.js"></script>

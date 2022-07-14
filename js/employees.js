@@ -37,7 +37,7 @@ employeeTabBtns.forEach(tabBtn => {
       employeeTabBtns[i].classList.remove('active');
       employeeTabPages[i].classList.add('hide');
       employeeTabPages[i].classList.remove('show');
-      console.log("first stage done");
+      
     }
 
     let pageTarget = document.querySelector(`${tabBtn.dataset.page}`);
@@ -46,7 +46,7 @@ employeeTabBtns.forEach(tabBtn => {
         tabBtn.classList.add('active');
         pageTarget.classList.remove('hide');
         pageTarget.classList.add('show');
-        console.log("second stage done"); 
+        
     }, 100);
     
   });
@@ -58,7 +58,7 @@ mobileEmployeeTabBtns.forEach(tabBtn => {
         mobileEmployeeTabBtns[i].classList.remove('active');
         employeeTabPages[i].classList.add('hide');
         employeeTabPages[i].classList.remove('show');
-        console.log("first stage done");
+        
     }
   
     let pageTarget = document.querySelector(`${tabBtn.dataset.page}`);
@@ -67,7 +67,7 @@ mobileEmployeeTabBtns.forEach(tabBtn => {
         tabBtn.classList.add('active');
         pageTarget.classList.remove('hide');
         pageTarget.classList.add('show');
-        console.log("second stage done"); 
+        
     }, 100);
       
     });

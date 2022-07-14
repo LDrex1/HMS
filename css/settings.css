@@ -1,3 +1,10 @@
+.mobile-picture-btn-wrap.hide {
+  display: none;
+}
+.mobile-camera-icon {
+  bottom: 0;
+  right: 0;
+}
 .fs-tab {
   font-size: 20px;
   line-height: 24px;
@@ -48,39 +55,12 @@
  .profile-input::placeholder{
   color: #FFFFFF;
 }
-.edit{
-  border: 1px solid lightgray;
-} 
-.pw{
-  display: all;
 }
+input[type="file"] {
+  display: none;
 }
-
-/* .change{
-  border-bottom: 10px solid rgba(175, 19, 175, 1);
-} */
-.change-pw{
-  position: absolute;
-  width:1085px; 
-  height:1395px;
-}
-.dashboard{
-  height:1395px;
-}
-.pass{
-  height:634px;
-}
-.nothing{
-  margin-bottom: 700px !important;
-}
-
-@media only screen and (max-width:426px){
-  /* .change-pw{
-    display: none;
-  } */
-  .label{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-  }
+.form-input-picture {
+  background: #FFFFFF;
+  border: 0.75px solid #CAD4DD;
+  outline: none;
 }
