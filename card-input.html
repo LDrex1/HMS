@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card-input.css">
     
-    <title>Guest Card Input | Kimberly Hotel</title>
+    <title>Pay With Card - Guest | Kimberly Hotel</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -20,8 +20,8 @@
 </head>
 <body class="bg-neutral-5">
     <header class="bg-white">
-        <nav class="navbar bg-transparent d-block d-lg-flex justify-content-center align-items-center py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5">
+        <nav class="navbar bg-transparent d-flex justify-content-start justify-content-lg-center align-items-center py-3 py-lg-0">
+            <a href="index.html" class=" height-50px md-height-75px ms-3 ms-md-5 ms-lg-0">
                 <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
         </nav>
@@ -42,13 +42,13 @@
                     <div class="input-group d-flex justify-content-between">
                         <div class="short-input width-100 lg-width-42 mt-2 mb-4 position-relative">
                             <label class="fs-body-2 mb-1" for="card-number">Card Number</label>
-                            <input type="number" name="card-number" id="card-number" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1" required>
+                            <input type="number" name="card-number" id="card-number" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-2 px-4 mt-1 text-black letter-spacing-1" required>
                             <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                         </div>
                         <div class="short-input mini-input d-flex flex-wrap justify-content-start align-items-center width-100 lg-width-48 mt-2 mb-4 position-relative">
                             <label class="fs-body-2 mb-1 w-100" for="expiring-date">Expiring Date</label>
                             <div class="month">
-                                <select name="month" id="expiring-date" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-3 px-4 mt-1 text-black" required>
+                                <select name="month" id="expiring-date" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-2 px-3 mt-1 text-black" required>
                                     
                                     <option value=""></option>
                                     <option value="Jan">Jan</option>
@@ -68,7 +68,7 @@
                             </div>
                             <p class="ms-2 me-2 my-auto">/</p>
                             <div class="year">
-                                <select id="year" name="year" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-3 px-4 mt-1 text-black" required>
+                                <select id="year" name="year" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-2 px-3 mt-1 text-black" required>
                                     <option value=""></option>
                                 
                                 </select>
@@ -80,13 +80,12 @@
                     <div class="input-group d-flex justify-content-between">
                         <div class="short-input width-100 lg-width-42 mt-2 mb-4 position-relative">
                             <label class="fs-body-2 mb-1" for="card-number">Card Holder Name</label>
-                            <input type="text" name="card-number" id="card-number" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-3 px-4 mt-1 text-black" required>
+                            <input type="text" name="card-number" id="card-number" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-2 px-4 mt-1 text-black" required>
                             <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                         </div>
                         <div class="short-input mini-input d-flex flex-wrap justify-content-start align-items-center width-100 lg-width-48 mt-2 mb-4 position-relative">
                             <label class="fs-body-2 mb-1 w-100" for="expiring-date">CVC</label>
-                    
-                                <input type="text" pattern="\d{3}" maxlength="3" name="month" id="expiring-date" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1" required>
+                            <input type="text" pattern="\d{3}" maxlength="3" name="month" id="expiring-date" class="form-input-1 w-100 fs-card-input bdr-rad-2 py-2 ps-5 mt-1 text-black letter-spacing-1" required>
                             <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                         </div>
                     </div>

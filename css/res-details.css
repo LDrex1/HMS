@@ -34,3 +34,9 @@ a[href^="tel"] {
     border-top: 0 !important;
   }
 }
+label a {
+  color: #1a1a1a;
+}
+label a:hover {
+  color: #4D69FF;
+}

@@ -7,8 +7,8 @@ main {
   line-height: 32px;
 }
 .fs-card-input {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 30px;
 }
 @media only screen and (max-width: 991.99px) {
   .fs-card-header {
@@ -16,8 +16,8 @@ main {
     line-height: 24px;
   }
   .fs-card-input {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 input[type="number"]::-webkit-inner-spin-button,
