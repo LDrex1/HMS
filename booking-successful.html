@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/thanks_style.css">
+
+    <title>Booking Successful - Admin | Kimberly Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-white lg-bg-neutral-5">
+    <header class="w-100">
+        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
+            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="user d-none me-3 me-lg-4 me-xl-5 d-lg-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start width-200px sm-width-250px md-width-300px" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="user mb-4 ms-2 d-flex align-items-center">
+                        <div class="offcanvas-user-pic width-75px height-75px">
+                            <img src="img/user-img.png" alt="User image" class="img-fluid">
+                        </div>
+                        <div class="user-text d-flex flex-column justify-content-center ms-2">
+                            <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                        </div>
+                    </div>
+                    <div class="sidenav bg-white d-flex flex-column justify-content-between">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="dashboard.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                            <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="guests.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="employees.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="notifications.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1">
+                            <a class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModalNav">
+                                <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            </a>
+                            <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModalNav" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white border hms-border p-0">
+                                        <div class="modal-body p-4 p-md-5">
+                                            <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                            <div class="d-flex justify-content-between pt-2 pb-4">
+                                                <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container bg-white lg-bg-neutral-5 py-5">
+            <div class="border-none lg-border bdr-width-1 hms-border bg-white width-100 md-width-85 lg-width-70 py-4 px-2 px-md-4 px-lg-5 mt-3 mx-auto">          
+                <div class="text-center mt-3">
+                    <img src="img/ay-checkMark.png" alt="">
+                </div>
+    
+                <div>
+                    <p class="text-center success-text my-5 fw-700">Booking Successful</p>
+                </div>
+    
+                <div>
+                    <p class="text-center fs-mine fw-400 pb-3">Guest has been booked successfully. Their booking number is <span class="success-text"> 12345678 </span></p>
+                </div>
+    
+                <div class="d-flex justify-content-center align-items-center flex-xl-row flex-lg-row flex-md-row flex-column mb-4">
+                    <a href="dashboard.html" class="text-decoration-none ghost-primary-btn fs-button fw-700 width-250px bdr-rad-2 py-3 mb-4 mx-xl-4 mx-lg-4 mx-md-4">Go To Dashboard</a>
+                    <a href="bookings.html" class="text-decoration-none primary-btn fs-button fw-700 width-250px text-white bdr-rad-2 mb-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-4 py-3">Book A Guest</a>
+                </div>                           
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/main.js"></script>                                        
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
