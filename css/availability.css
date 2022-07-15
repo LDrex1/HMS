@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+input[type="date"]{
+   background: url(/img/Vector-dg.png);
+   background-size: 15px;
+   background-repeat: no-repeat;
+   background-position: 90%;
+   padding: 5px;
+   background-color: #FFFFFF;
+}
+::-webkit-calendar-picker-indicator{
+   opacity: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .room-image img {
+    border-radius: 5px 5px 0 0;
+  }
+}
+.search-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#result-1 {
+  background-image: url('../img/Rectangle\ 33-dg.png');
+}
+#result-1 {
+  background-image: url('../img/Rectangle\ 34-dg.png');
+}
+#result-1 {
+  background-image: url('../img/Rectangle\ 37-dg.png');
+}
+
+.result-card {
+  background: #FCFCFD;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}

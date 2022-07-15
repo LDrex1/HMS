@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/availability.css">
+
+    <title>Kimberly Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="lg-bg-neutral-5">
+  <header class="bg-white">
+    <nav class="navbar bg-transparent d-flex justify-content-start justify-content-lg-center align-items-center py-3 py-lg-0">
+      <a href="index.html" class=" height-50px md-height-75px ms-3 ms-md-5 ms-lg-0">
+        <img src="img/logo.png" alt="Our Logo" class="h-100">
+      </a>
+    </nav>
+  </header>
+  <section id="Availability-search">
+    <div class="container">
+      <div class="text-center py-4">
+        <h6 class="d-none d-lg-block fs-body-1 text-center mt-4">SEARCH FOR AVAILABLE ROOMS</h6>
+        <h6 class="d-block d-lg-none fs-headline-3 fw-700 text-center">Search For Available Rooms</h6>
+      </div>
+      <form id="search-form" action="">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between width-100 md-width-75 lg-width-80 xl-width-90 mx-auto">
+          <div class="width-100 lg-width-30 mt-2 mb-4 position-relative">
+            <label for="check-in" class="fs-form-input mb-1 fw-500">Check-In</label>
+            <input type="date" name="check-in" id="check-in" class="form-input-1 w-100 dark-border fs-form-input fw-500 bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1">
+            <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+          </div>
+          <div class="width-100 lg-width-30 mt-2 mb-4 position-relative">
+            <label for="check-out" class="fs-form-input mb-1">Check-Out</label>
+            <input type="date" name="check-out" id="check-out" class="form-input-1 w-100 dark-border fs-form-input bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1">
+            <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+          </div>
+          <div class="d-flex justify-content-between width-100 lg-width-30">
+            <div class="width-45 mt-2 mb-4 position-relative">
+              <label for="adults" class="fs-form-input mb-1">Adults</label>
+              <select name="adults" id="adults" class="form-input-1 w-100 dark-border fs-form-input bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1">
+                <option value="" disabled selected></option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21+">21+</option>
+              </select>
+              <h6 class="fs-form-input mt-1">Age: 12+</h6>
+            </div>
+            <div class="width-45 mt-2 mb-4 position-relative">
+              <label for="kids" class="fs-form-input mb-1">Kids</label>
+              <select name="kids" id="kids" class="form-input-1 w-100 dark-border fs-form-input bdr-rad-2 py-3 px-4 mt-1 text-black letter-spacing-1">
+                <option value="" disabled selected></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select>
+              <h6 class="fs-form-input mt-1">Age: 2-11</h6>
+            </div>
+          </div>
+        </div>  
+        <div class="d-flex justify-content-center w-100 mt-3">
+          <button type="submit" id="search-submit" class="primary-btn text-white bdr-rad-2 box-shad-1 lg-box-shad-none fs-copyright fw-700 py-3 px-5 width-100 md-width-auto lg-text-uppercase">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="room-section">
+    <div class="container desktop-version d-none d-lg-block py-5 mb-5 width-100">
+      <h2 class="fs-headline-3">Premium Rooms</h2>
+      <div class="row mb-3">
+        <div class="room-image col-4">
+          <div id="result-1" class="search-image width-100 height-350px"></div>
+        </div>
+        <div class="room-text col-8 ps-2">
+          <div class="bg-white height-350px d-flex justify-content-between p-2">
+            <ul class="">
+              <li class="py-1 fs-body-2">Free breakfast</li>
+              <li class="py-1 fw-700 fs-body-2">Free Wifi</li>
+              <li class="py-1 fw-700 fs-body-2">Mini fridge</li>
+              <li class="py-1 fw-700 fs-body-2">Satellite TV</li>
+              <li class="pt-1 fw-700 fs-body-2">Air Condition</li>
+            </ul>
+            <div class="book-now d-flex flex-column justify-content-end align-items-end ">
+              <h5 class="fs-headline-3">N32,000</h5>
+              <a href="bookings.html" class="text-decoration-none primary-btn text-white bdr-rad-2 fs-copyright fw-700 py-3 px-4 me-1">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="room-image col-4">
+          <div id="result-2" class="search-image width-100 height-350px"></div>
+        </div>
+        <div class="room-text col-8 ps-2">
+          <div class="bg-white height-350px d-flex justify-content-between p-2">
+            <ul class="">
+              <li class="py-1 fs-body-2">Free breakfast</li>
+              <li class="py-1 fw-700 fs-body-2">Free Wifi</li>
+              <li class="py-1 fw-700 fs-body-2">Mini fridge</li>
+              <li class="py-1 fw-700 fs-body-2">Satellite TV</li>
+              <li class="py-1 fw-700 fs-body-2">Coffee and Tea</li>
+              <li class="pt-1 fw-700 fs-body-2">Air Condition</li>
+              <li class="py-1 fw-700 fs-body-2">Free Laptop</li>
+            </ul>
+            <div class="book-now d-flex flex-column justify-content-end align-items-end ">
+              <h5 class="fs-headline-3">N40,000</h5>
+              <a href="bookings.html" class="text-decoration-none primary-btn text-white bdr-rad-2 fs-copyright fw-700 py-3 px-4 me-1">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="room-image col-4">
+          <div id="result-1" class="search-image width-100 height-350px"></div>
+        </div>
+        <div class="room-text col-8 ps-2">
+          <div class="bg-white height-350px d-flex justify-content-between p-2">
+            <ul class="">
+              <li class="py-1 fs-body-2">Free breakfast</li>
+              <li class="py-1 fw-700 fs-body-2">Free Wifi</li>
+              <li class="py-1 fw-700 fs-body-2">Mini fridge</li>
+              <li class="py-1 fw-700 fs-body-2">Satellite TV</li>
+              <li class="py-1 fw-700 fs-body-2">Coffee and Tea</li>
+              <li class="pt-1 fw-700 fs-body-2">Air Condition</li>
+              <li class="py-1 fw-700 fs-body-2">Free Laptop</li>
+              <li class="py-1 fw-700 fs-body-2">Double Beds</li>
+            </ul>
+            <div class="book-now d-flex flex-column justify-content-end align-items-end ">
+              <h5 class="fs-headline-3">N50,000</h5>
+              <a href="bookings.html" class="text-decoration-none primary-btn text-white bdr-rad-2 fs-copyright fw-700 py-3 px-4 me-1">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mobile-version d-block d-lg-none py-5 mb-5 width-100">
+      <div class="width-100 md-width-75 mx-auto">
+        <h2 class="fs-headline-3 fw-700 mb-4">Premium Rooms</h2>
+        <div id="result-mobile-1" class="result-card">
+          <div class="ratio ratio-16x9 w-100">
+            <img src="img/Rectangle 33-dg.png" alt="Room" class="img-fluid">
+          </div>
+          <p class="fs-body-2 text-black my-3">Free breakfast, free wifi, mini fridge, satellite tv, air condition</p>
+          <div class="d-flex justify-content-between align-items-center mt-2 mb-4 px-2">
+            <h6 class="fs-footer fw-700 text-pink m-0">₦32,000</h6>
+            <a href="bookings.html" class="text-decoration-none primary-btn bdr-rad-2 box-shad-1 fs-copyright py-3 px-4">Book Now</a>
+          </div>
+        </div>
+        <div id="result-mobile-2" class="result-card">
+          <div class="ratio ratio-16x9 w-100">
+            <img src="img/Rectangle 34-dg.png" alt="Room" class="img-fluid">
+          </div>
+          <p class="fs-body-2 text-black my-3">Free breakfast, free wifi, mini fridge, satellite tv, air condition</p>
+          <div class="d-flex justify-content-between align-items-center mt-2 mb-4 px-2">
+            <h6 class="fs-footer fw-700 text-pink m-0">₦40,000</h6>
+            <a href="bookings.html" class="text-decoration-none primary-btn bdr-rad-2 box-shad-1 fs-copyright py-3 px-4">Book Now</a>
+          </div>
+        </div>
+        <div id="result-mobile-3" class="result-card">
+          <div class="ratio ratio-16x9 w-100">
+            <img src="img/Rectangle 37-dg.png" alt="Room" class="img-fluid">
+          </div>
+          <p class="fs-body-2 text-black my-3">Free breakfast, free wifi, mini fridge, satellite tv, air condition</p>
+          <div class="d-flex justify-content-between align-items-center mt-2 mb-4 px-2">
+            <h6 class="fs-footer fw-700 text-pink m-0">₦50,000</h6>
+            <a href="bookings.html" class="text-decoration-none primary-btn bdr-rad-2 box-shad-1 fs-copyright py-3 px-4">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class=" bg-neutral-footer text-white mt-3" style="background-color: #393D46;">
+      <div class="container">
+          <div class="row py-5">
+              <div class="col-lg-4 col-md-12 mt-5">
+                  <div class="">
+                      <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
+                      <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
+                  </div>
+                  <form action="" method="post">
+                      <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
+                          <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                          <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                      </div>
+                  </form>
+                  
+              </div>
+
+              <div class="col-lg-2 col-md-12 mt-5">
+                  <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
+                  
+                  <h6 class="fs-input mb-3">Restaurants</h6>
+                  <h6 class="fs-input mb-3">Rooms and Suites</h6>
+                  <h6 class="fs-input mb-3">Events</h6>
+                  
+              </div>
+
+              <div class="col-lg-2 col-md-12 mt-5">
+                  <h5 class="fs-footer fw-700 mb-4">Company</h5>
+                  
+                  <h6 class="fs-input mb-2">About us</h6>
+                  <h6 class="fs-input mb-2">Blog</h6>
+                  <h6 class="fs-input mb-2">Contact us</h6>
+                  <h6 class="fs-input mb-4">Services</h6>
+              </div>
+
+              <div class="col-lg-2 col-md-12 mt-5">
+                  <h5 class="fs-footer fw-700 mb-4">Support</h5>
+                  
+                  <h6 class="fs-input mb-2">Support center</h6>
+                  <h6 class="fs-input mb-2">FAQ</h6>
+                  <h6 class="fs-input mb-2">Privacy Policy</h6>
+                  <h6 class="fs-input mb-4">Terms of service</h6>
+              </div>
+
+              <div class="col-lg-2 col-md-12 mt-5">
+                  <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
+                  <img src="img/instagram (2)-dg.png" alt="" class="me-4">
+                  <img src="img/twitter (4)-dg.png" alt="" class="me-4">
+                  <img src="img/facebook (3)-dg.png" alt="" class="">
+                  <!-- <i class="fa-brands fa-instagram me-4"></i>
+                  <i class="fa-brands fa-twitter me-4"></i>
+                  <i class="fa-brands fa-facebook-square"></i> -->
+              </div>
+
+          </div>
+
+        <div class="row">
+              <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
+        </div>
+      </div>
+  </footer>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> 
+  <script src="js/main.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
