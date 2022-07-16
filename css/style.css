@@ -335,6 +335,7 @@ body {
 .opacity-15 { opacity: 0.15;}
 .opacity-30 { opacity: 0.30;}
 .opacity-50 { opacity: 0.50;}
+.opacity-60 { opacity: 0.60;}
 .opacity-75 { opacity: 0.75;}
 .opacity-80 { opacity: 0.80;}
 .opacity-90 { opacity: 0.90;}
@@ -357,6 +358,7 @@ body {
 .width-51 { width: 51%;}
 .width-52 { width: 52%;}
 .width-60 { width: 60%;}
+.width-66 { width: 66%;}
 .width-70 { width: 70%;}
 .width-75 { width: 75%;}
 .width-80 { width: 80%;}
@@ -367,6 +369,7 @@ body {
 .width-99 { width: 99%;}
 .width-100 { width: 100%;}
 
+.width-12px { width: 12px !important;}
 .width-24px { width: 24px !important;}
 .width-25px { width: 25px !important;}
 .width-30px { width: 30px !important;}
@@ -383,6 +386,7 @@ body {
 .width-350px { width: 350px !important;}
 .width-400px { width: 400px !important;}
 
+.height-12px { height: 12px !important;}
 .height-24px { height: 24px !important;}
 .height-25px { height: 25px !important;}
 .height-30px { height: 30px !important;}
@@ -418,6 +422,7 @@ body {
     .sm-width-51 { width: 51%;}
     .sm-width-52 { width: 52%;}
     .sm-width-60 { width: 60%;}
+    .sm-width-66 { width: 66%;}
     .sm-width-70 { width: 70%;}
     .sm-width-75 { width: 75%;}
     .sm-width-80 { width: 80%;}
@@ -478,6 +483,7 @@ body {
     .md-width-51 { width: 51%;}
     .md-width-52 { width: 52%;}
     .md-width-60 { width: 60%;}
+    .md-width-66 { width: 66%;}
     .md-width-70 { width: 70%;}
     .md-width-75 { width: 75%;}
     .md-width-80 { width: 80%;}
@@ -526,6 +532,7 @@ body {
     .lg-width-15 { width: 15%;}
     .lg-width-20 { width: 20%;}
     .lg-width-25 { width: 25%;}
+    .lg-width-29 { width: 29%;}
     .lg-width-30 { width: 30%;}
     .lg-width-33 { width: 33%;}
     .lg-width-33-third { width: 33.333%;}
@@ -538,6 +545,7 @@ body {
     .lg-width-51 { width: 51%;}
     .lg-width-52 { width: 52%;}
     .lg-width-60 { width: 60%;}
+    .lg-width-66 { width: 66%;}
     .lg-width-70 { width: 70%;}
     .lg-width-75 { width: 75%;}
     .lg-width-80 { width: 80%;}
@@ -597,6 +605,7 @@ body {
     .xl-width-51 { width: 51%;}
     .xl-width-52 { width: 52%;}
     .xl-width-60 { width: 60%;}
+    .xl-width-66 { width: 66%;}
     .xl-width-70 { width: 70%;}
     .xl-width-75 { width: 75%;}
     .xl-width-80 { width: 80%;}
@@ -1022,9 +1031,20 @@ input[type="checkbox"]:focus, input[type="checkbox"]:active {
     background-position: top center;
     background-repeat: no-repeat;
 }
+.banner-background {
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: linear-gradient(90deg, #A6A6A860, #A6A6A860), url("../img/check-in-background.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 .background-mask {
     background: rgba(0, 0, 0, 0.87);
     opacity: 0.5;
+}
+.background-mask-2 {
+    background: #A6A6A860;
 }
 
 /*-----SIDENAV-----*/
