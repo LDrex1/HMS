@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboardStyle.css">
+
+    <title>Kimberly Hotel Dashboard</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
+            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="d-none d-lg-flex align-items-center">
+                <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Dashboard</h5>
+                <form id="nav-search-form" action="" method="post">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="nav-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="nav-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-250px xl-width-350px py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
+            </div>
+            <div class="user d-none me-3 me-lg-4 me-xl-5 d-lg-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start width-200px" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="user mb-4 ms-2 d-flex align-items-center">
+                        <div class="offcanvas-user-pic width-75px height-75px">
+                            <img src="img/user-img.png" alt="User image" class="img-fluid">
+                        </div>
+                        <div class="user-text d-flex flex-column justify-content-center ms-2">
+                            <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                        </div>
+                    </div>
+                    <div class="sidenav bg-white d-flex flex-column justify-content-between">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="dashboard.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="guests.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                            <a href="employees.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="notifications.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1">
+                            <a class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModalNav">
+                                <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            </a>
+                            <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModalNav" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white border hms-border p-0">
+                                        <div class="modal-body p-4 p-md-5">
+                                            <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                            <div class="d-flex justify-content-between pt-2 pb-4">
+                                                <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+                    <!-- **************************END OF HEADERS**************************** -->
+
+                <!-- **************************BEGINNING OF MAIN SECTION**************************** -->
+
+        <!-- Copy the entire main element and delete what's in .main-content if you're building an admin page    -->
+
+    <main>
+        <div class="container">
+            <div class="row d-block d-lg-none py-3 py-md-5">
+                <h5 class="fs-headline-3 text-center text-grey-4 fw-700 mb-4">Dashboard</h5>
+                <form id="main-search-form" action="" method="post" class="width-100 mx-auto">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="main-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="main-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-95 py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-5 border-end hms-border p-0 m-0">
+
+        <!-- Below is the side navigation for admin pages. Be sure to confirm the right .sidenav-link div has the .active class attached    -->
+
+                <div class="sidenav bg-neutral-5 d-flex flex-column justify-content-between">
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="dashboard.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
+                        <a href="bookings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="guests.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="employees.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="notifications.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="settings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link logout bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                            <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                        </a>
+                        <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="modal-body p-4 p-md-5">
+                                        <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                        <div class="d-flex justify-content-between pt-2 pb-4">
+                                            <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                            <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Main Content -->
+            <div class="main-content col-12 col-lg-10 position-relative">    <!--  This is .main-content   -->
+                <div class="row pt-3">
+                    <div class="pb-3 col-md-3 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral py-5">
+
+                        </div>
+                    </div>
+
+                    <div class="pb-3 col-md-3 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral py-5">
+
+                        </div>
+                    </div>
+
+                    <div class="pb-3 col-md-3 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral py-5">
+
+                        </div>
+                    </div>
+
+                    <div class="pb-3 col-md-3 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral py-5">
+
+                        </div>
+                    </div>
+      
+                </div>
+
+                <div class="d-flex pt-3">
+                    <div class="pb-3 col-md-9 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral mpy">
+
+                        </div>
+                    </div>
+
+                    <div class="pb-3 col-md-3 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral mpy">
+
+                        </div>
+                    </div>
+      
+                </div>
+
+                <div class="d-flex pt-3">
+                    <div class="pb-3 col-md-6 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral mpy">
+
+                        </div>
+                    </div>
+
+                    <div class="pb-3 col-md-6 col-sm-12">
+                        <div class="content-box-1 border hms-border bg-neutral mpy">
+
+                        </div>
+                    </div>
+      
+                </div>
+
+                <!-- Slider -->
+                <div id="carouselExampleCaptions" class="row carousel slide py-3" data-bs-ride="carousel">
+                    <div class="col-4">
+                        <div class="carousel-item active">
+                            <img src="img/ay-Room - imp 1.png" class="d-block w-100" alt="...">
+                            <div class="d-flex justify-content-between">
+                              <span class="fw-700 fs-input">Signature Room</span>
+                              <p class="fw-500 fs-input text-pink bg-neutral-3 px-2">#155,000</p>
+                            </div>
+                          </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="carousel-item active">
+                            <img src="img/ay-Experience 1 1.png" class="d-block w-100" alt="...">
+                            <div class="d-flex justify-content-between px-2">
+                                <span class="fw-700 fs-input">Superior Room</span>
+                                <p class="fw-500 fs-input text-pink bg-neutral-3">#320,000</p>
+                              </div>
+                          </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="carousel-item active">
+                            <img src="img/ay-Room Deluxe 1.png" class="d-block w-100" alt="...">
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-700 fs-input">Deluxe Room</span>
+                                <p class="fw-500 fs-input text-pink bg-neutral-3">#400,000</p>
+                              </div>
+                          </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+                
+
+            </div>
+        </div>
+    </main>
+
+                <!-- **************************END OF MAIN SECTION**************************** -->
+
+    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-12 mt-5">
+                    <div class="">
+                        <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
+                        <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
+                    </div>
+                    <form action="" method="post">
+                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
+                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
+                    
+                    <h6 class="fs-input mb-3">Restaurants</h6>
+                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
+                    <h6 class="fs-input mb-3">Events</h6>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Company</h5>
+                    
+                    <h6 class="fs-input mb-2">About us</h6>
+                    <h6 class="fs-input mb-2">Blog</h6>
+                    <h6 class="fs-input mb-2">Contact us</h6>
+                    <h6 class="fs-input mb-4">Services</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Support</h5>
+                    
+                    <h6 class="fs-input mb-2">Support center</h6>
+                    <h6 class="fs-input mb-2">FAQ</h6>
+                    <h6 class="fs-input mb-2">Privacy Policy</h6>
+                    <h6 class="fs-input mb-4">Terms of service</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
+                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
+                    <i class="fa-brands fa-twitter me-4"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                </div>
+
+            </div>
+
+           <div class="row">
+                <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
+           </div>
+        </div>
+    </footer>
+
+
+
+
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>                                          <!-- It's for the icons in the sidenav -->
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
