@@ -1,0 +1,16 @@
+
+.form-input {
+    background: #DEDEDE;
+    outline: none;
+    border: 2px solid #333333;
+    transition: all ease-out 300ms;
+}
+.form-input:hover {
+    box-shadow: 0 0 0 2px #F49AF435;
+    border-color: #AF13AF;
+}
+.form-input:active, .form-input-2:focus {
+    outline: none;
+    border-color: #AF13AF;
+    box-shadow: 0 0 0 4px #F49AF470;
+}

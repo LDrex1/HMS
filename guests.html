@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guests | Kimberly Hotel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-white d-flex align-items-center justify-content-between border-none lg-border-bottom hms-border m-0 p-0 py-3 py-lg-2">
+            <a href="index.html" class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+            <div class="d-none d-lg-flex align-items-center">
+                <h5 class="fs-headline-3 text-grey-4 fw-700 me-3">Guests</h5>
+                <form id="nav-search-form" action="" method="">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="nav-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="nav-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-250px xl-width-350px py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="user d-none me-3 me-lg-4 me-xl-5 d-lg-flex align-items-center">
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start width-200px" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="user mb-4 ms-2 d-flex align-items-center">
+                        <div class="offcanvas-user-pic width-75px height-75px">
+                            <img src="img/user-img.png" alt="User image" class="img-fluid">
+                        </div>
+                        <div class="user-text d-flex flex-column justify-content-center ms-2">
+                            <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                        </div>
+                    </div>
+                    <div class="sidenav bg-white d-flex flex-column justify-content-between">
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="dashboard.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="bookings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active">
+                            <a href="guests.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="employees.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="notifications.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1">
+                            <a href="settings.html" class="text-decoration-none bg-white ps-4 py-2 width-98">
+                                <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                            </a>
+                        </div>
+                        <div class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1">
+                            <a class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModalNav">
+                                <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                            </a>
+                            <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModalNav" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white border border-secondary p-0">
+                                        <div class="modal-body p-4 p-md-5">
+                                            <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                            <div class="d-flex justify-content-between pt-2 pb-4">
+                                                <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                                <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row d-block d-lg-none py-3 py-md-5">
+                <h5 class="fs-headline-2 text-center text-grey-4 fw-700 mb-4">Dashboard</h5>
+                <form id="main-search-form" action="" method="" class="width-100 mx-auto">
+                    <div class="nav-input-wrap d-flex border hms-border bdr-rad-1">
+                        <button type="submit" id="main-search-btn" class="input-button bg-neutral-5 w-auto fs-form-input text-grey-6 px-3 py-3"><i class="fa-solid fa-magnifying-glass fs-form-input"></i></button>
+                        <input type="text" id="main-search-input" class="form-input-footer bg-neutral-5 text-grey-1 fs-form-input width-95 py-3 pe-3" placeholder="Search rooms, customers, etc">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block bg-neutral-5 border-end hms-border p-0 m-0">
+                <div class="sidenav bg-neutral-5 d-flex flex-column justify-content-between">
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="dashboard.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="bookings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Bookings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1 active">
+                        <a href="guests.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="employees.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="notifications.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a href="settings.html" class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98">
+                            <p class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link logout bg-neutral-5 d-flex align-items-center justify-content-start my-1">
+                        <a class="text-decoration-none bg-neutral-5 ps-lg-4 ps-xl-4 py-2 width-98 position-relative" role="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                            <p class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
+                        </a>
+                        <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" id="logoutModal" tabindex="-1" aria-label="Logout" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="modal-body p-4 p-md-5">
+                                        <h6 class="text-center fs-body-2 text-black fw-700 mt-4">Are you sure you want to logout?</h6>
+                                        <div class="d-flex justify-content-between pt-2 pb-4">
+                                            <button type="button" class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3" data-bs-dismiss="modal" aria-label="Close">No</button>
+                                            <a href="login.html" class="text-decoration-none width-48 p-0 my-3"><button type="button" class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3">Yes</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content col-12 col-lg-10 position-relative">   
+                <div class="container py-4 px-0 px-lg-4">   
+                        <div class="button-top  justify-content-between mb-lg-5 d-none d-lg-flex">
+                            <div class="button-right btn-group lg-box-shad-kc ">
+                                <button type="button" class=" px-5 primary-btn text-white py-3 bdr-rad-2 "> <span class="fs-copyright fw-700">Confirm Online Booking</span> </button>
+                            </div>
+                            <div class="button-left align-content-end justify-content-end">
+                                <div class="d-flex justify-content-end w-100  ">
+                                    <button id="sort-btn-guests-1" class="dropdown-button bg-white border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                                        <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-4"></i></span></p>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-end w-100 ">
+                                    <div class="btn-dropdown-space width-50 position-relative">
+                                        <div id="sort-dropdown-guests-1" class="btn-dropdown bg-white lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                            <ul class="m-0 p-0">
+                                                <li class="d-flex pb-1">
+                                                    <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                                </li>
+                                                <li class="d-flex pt-1">
+                                                    <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2">
+                                                    </i></span>Alphabetical Order</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-top d-flex  justify-content-between mb-0  d-lg-none mt-0 mb-3">
+                            <div class="button-right btn-group lg-box-shad-kc ">
+                                <h6 class="fs-body-2 fw-700 text-grey-1 mt-3  mb-4 ">Most Recent</h6>
+                            </div>
+                            <div class="button-left align-content-end justify-content-end">
+                                <div class="d-flex justify-content-end w-100  ">
+                                    <button id="sort-btn-guests-3" class="dropdown-button bg-white border hms-border bdr-rad-2 box-shad-1 px-5 py-2 mt-1">
+                                        <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-2"></i></span></p>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-end w-100 ">
+                                    <div class="btn-dropdown-space width-50 position-relative">
+                                        <div id="sort-dropdown-guests-3" class="btn-dropdown bg-white lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                            <ul class="m-0 p-0">
+                                                <li class="d-flex pb-1">
+                                                    <p id="date-1" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                                </li>
+                                                <li class="d-flex pt-1">
+                                                    <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2">
+                                                    </i></span>Alphabetical Order</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="fs-body-1 fw-700 text-grey-1  mb-4 d-none d-lg-flex">Most Recent</h6>
+                        <table class="hms-table-1 mb-3">
+                            <col width="40%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <thead>
+                                <tr>
+                                    <th class="ps-5">Name</th>
+                                    <th>Reservations</th>
+                                    <th>Nights Stayed</th>
+                                    <th>Last Visit</th>
+                                </tr>
+                            </thead>
+                                             <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>15</td>
+                                    <td>16 June 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-ese.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Ese Adora</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>10 Feb 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-ife.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Ifeoluwa Ajibola</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>6 Jan 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-jona.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Jonah Udeme</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                    <td>1 Jul 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-david.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">David Balogun</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>16 Jun 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-kene.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Kelechi Nwachukwu</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>7 Mar 2022</td>
+                                </tr>
+                        </table>
+                        <div class="button-top d-flex  justify-content-between mb-3  d-lg-none mt-5 mb-3">
+                            <div class="button-right btn-group lg-box-shad-kc ">
+                                <h6 class="fs-body-1 fw-700 text-grey-1 mt-3  mb-4 ">All Guests</h6>
+                            </div>
+                            <div class="button-left align-content-end justify-content-end">
+                                <div class="d-flex justify-content-end w-100  ">
+                                    <button id="sort-btn-guests-2" class="dropdown-button bg-white border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                                        <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span"><i class="fa-solid fa-angle-down dropdown-button-icon ms-2"></i></span></p>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-end w-100 ">
+                                    <div class="btn-dropdown-space width-50 position-relative">
+                                        <div id="sort-dropdown-guests-2" class="btn-dropdown bg-white lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                            <ul class="m-0 p-0">
+                                                <li class="d-flex pb-1">
+                                                    <p id="date-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                                </li>
+                                                <li class="d-flex pt-1">
+                                                    <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2">
+                                                    </i></span>Alphabetical Order</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-flex justify-content-end w-100 mt-5 pt-3 ">
+                            <button id="sort-btn-guests-4" class="dropdown-button bg-white border hms-border bdr-rad-2 box-shad-1 px-5 py-2">
+                                <p class="dropdown-button-text fw-700 fs-body-2 m-0">Sort By<span class="dropdown-button-span">
+                                    <i class="fa-solid fa-angle-down dropdown-button-icon ms-4"></i></span></p>
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-end w-100 ">
+                            <div class="btn-dropdown-space width-50 position-relative">
+                                <div id="sort-dropdown-guests-4" class="btn-dropdown bg-white lg-bg-neutral-5 bdr-rad-2 border py-4 px-3 position-absolute hide">
+                                    <ul class="m-0 p-0">
+                                        <li class="d-flex pb-1">
+                                            <p id="date-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2"></i></span>Date</p>
+                                        </li>
+                                        <li class="d-flex pt-1">
+                                            <p id="alpabetical-order-2" class="dropdown-item fs-body-2 text-grey-1"><span class="text-pink"><i class="fa-solid fa-circle me-2">
+                                            </i></span>Alphabetical Order</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="fs-body-1 fw-700 text-grey-1 mt-3 mb-4 d-none d-lg-flex">All Guests</h6>
+                        <table class="hms-table-1 mb-3">
+                            <col width="40%">
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="20%">
+                            <thead>
+                                <tr>
+                                    <th class="ps-5">Name</th>
+                                    <th>Reservations</th>
+                                    <th>Nights Stayed</th>
+                                    <th>Last Visit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-adam.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Adam Augustus</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>10 Feb 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-adamu.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Adamu Letenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>6 Jan 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-akoi.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Akoh Godwin</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                    <td>1 Jul 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-beatrice.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Beatrice Udeh</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>16 Jun 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-david.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">David Balogun</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>7 Mar 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-ese.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Ese Adora</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>10 Feb 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-elijah.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Elijah Chudi</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>6 Jan 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-ife.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Ifeoluwa Ajibola</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                    <td>1 Jul 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-jona.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Jonah Udeme</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>16 Jun 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-kene.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Kelechi Nwachukwu</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>7 Mar 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-nate.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Nate Andrews</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>10 Feb 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-obet.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Obet Samat</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>6 Jan 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center w-100 h-100 ps-3">
+                                            <div class="ratio ratio-1x1 width-40px rounded-circle d-inline-block me-4">
+                                                <img src="img/gn-richard.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="d-flex align-items-center h-100">
+                                                <p class="table-guest-name my-auto" role="button">Richard Tobenna</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                    <td>1 Jul 2020</td>
+                                </tr>
+                        </table>
+                                            
+                        <div class="mt-5 d-lg-none d-flex justify-content-center w-100">
+                            <div class="button-right btn-group lg-box-shad-kc justify-content-center mx-auto align-content-center w-100 w-md-75">
+                                <button type="button" class="btn btn-light w-100  px-5 primary-btn text-white " > <span class=" fw-700">Confirm Online Booking</span> </button>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="adminTableModal" tabindex="-1" aria-label="Name of Guest" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                <div class="modal-content bg-white border border-secondary p-0">
+                                    <div class="d-flex justify-content-end pe-2 py-3">
+                                        <button type="button" class=" modal-close bg-white border-none" data-bs-dismiss="modal" aria-label="Close">
+                                            <span class="iconify" data-icon="clarity:window-close-line" data-width="36" data-height="36"></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-1 p-md-4">
+                                        <div class="py-0 mx-0 mb-5">
+                                            <div class="d-flex align-items-center ps-1 mb-4">
+                                                <div class="ratio ratio-1x1 width-100px rounded-circle me-4">
+                                                    <img src="img/table-test-pic.png" alt="" class="img-fluid">
+                                                </div>
+                                                <h6 class="text-grey-1 text-uppercase fs-body-2 fw-700">Richard Tobenna</h6>
+                                            </div>
+                                          
+                                            <div class="table-wrap bg-neutral-6 border hms-border bdr-rad-1 position-relative">
+                                                <div id="personal-details" class="guest-tab-page mt-5 pt-5 pb-1 bdr-rad-1">
+                                                    <div class="container justify-content-betw contact-info mt-4 px-1 px-md-3 ">
+                                                        <div class="col-md-8 px-0 px-lg-2">
+                                                            <h7 class="text-grey-5 fw-light mt-5">CONTACT INFORMATION </h7>
+                                                            <div class="sub-text d-flex justify-content-between  pt-3">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">First Name</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav text-left fw-light ms-lg-4">Tobenna</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Last Name</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Richard</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Sex</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Male</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Phone</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">08190987654</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Email</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Richtob@gmail.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <h7 class="text-grey-5 fw-light mt-5">ADDRESS INFORMATION</h7>
+                                                            <div class="sub-text d-flex justify-content-between  pt-3">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Country </p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Nigeria</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">State</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4"> Lagos</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Address</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">V.V 2, Keffi Close, lkoyi</p>
+                                                                </div>
+                                                            </div>
+                                                            <h7 class="text-grey-5 fw-light mt-5">OTHER INFORMATION</h7>
+                                                            <div class="sub-text d-flex justify-content-between  pt-3">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Spouse</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center pt-0">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Ifeoluwa Tobenna</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Child 1</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center pt-0">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Udeme Tobenna</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Child 2</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center pt-0">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4"> Amarachi Tobenna</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sub-text d-flex justify-content-between  pt-0">
+                                                                <div class="col">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light">Place Of Employment</p>
+                                                                </div>
+                                                                <div class="col mx-auto d-flex text-center pt-0">
+                                                                    <p class="text-grey-5 fs-sidenav fw-light ms-lg-4">Amazon</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <table id="booking-history" class="hms-modal-table guest-tab-page bg-neutral-6 border hms-border hide">
+                                             
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <thead>
+                                                        <tr class="text-grey-5" valign="bottom">
+                                                            <th>Date</th>
+                                                            <th>Room Type</th>
+                                                            <th>Status</th>
+                                                            <th>No. Of Nights Spent</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody valign="bottom">
+                                                        <tr>
+                                                            <td>16 June 2022</td>
+                                                            <td>Superior</td>
+                                                            <td class="text-pink">Reserved</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11 Feb 2022</td>
+                                                            <td>Deluxe</td>
+                                                            <td class="success-text">Stayed</td>
+                                                            <td>2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>26 Jan 2022</td>
+                                                            <td>Deluxe</td>
+                                                            <td class="success-text">Stayed</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>16 Nov 2021</td>
+                                                            <td>Superior</td>
+                                                            <td class="success-text">Stayed</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7 Aug 2021</td>
+                                                            <td>Single</td>
+                                                            <td class="error-text">Cancelled</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12 Jul 2021</td>
+                                                            <td> Deluxe</td>
+                                                            <td class="text-pink">Stayed</td>
+                                                            <td>3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="tab-btns-row w-100 bdr-rad-1 position-absolute top-0 start-0">
+                                                    <div class="w-100 d-flex justify-content-between py-5 px-1 px-md-3 px-lg-4">
+                                                        <p role="button" class="guest-tab-btn d-inline-block text-grey-5 fw-700 fs-table current" data-page="#personal-details">Personal Details</p>
+                                                        <p role="button" class="guest-tab-btn d-inline-block text-grey-5 fw-700 fs-table" data-page="#booking-history">Booking History</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> 
+    <!-- <script src="js/main.js"></script>                                           -->
+    <script src="js/guests.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

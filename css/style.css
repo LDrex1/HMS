@@ -1013,6 +1013,20 @@ input[type="checkbox"]:focus, input[type="checkbox"]:active {
     }
 }
 
+/*-----CHECK-IN BACKGROUND-----*/
+.check-in-background {
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../img/check-in-background.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.background-mask {
+    background: rgba(0, 0, 0, 0.87);
+    opacity: 0.5;
+}
+
 /*-----SIDENAV-----*/
 
 .sidenav-link.active a {
@@ -1220,14 +1234,6 @@ input[type="checkbox"]:focus, input[type="checkbox"]:active {
     }
 }
 
-#adminTableModal.modal {
-    pointer-events: none;
-}
-
-#adminTableModal.modal-backdrop {
-    display: none;
-}
-
 .hms-modal-table {
     display: table;
     width: 100%;
@@ -1282,5 +1288,11 @@ input[type="checkbox"]:focus, input[type="checkbox"]:active {
     color: #AF13AF;
 }
 .tab-page.hide {
+    display: none;
+}
+.guest-tab-btn.current {
+    color: #AF13AF;
+}
+.guest-tab-page.hide {
     display: none;
 }

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar-one{
+    background-image: url("../img/Bakgnd\ 2\ 1.png");
+    background-repeat: no-repeat;
+    height: 58vh
+}
+
+.navbar-brand {
+    margin-bottom: 200%;
+    margin-left: -6%;
+}
+
+.back-btn {
+    margin-left: -6%;
+}
+.check-in {
+    margin-left: 4%;
+}
+
+.form-input {
+    width: 100%;
+    background: #DEDEDE;
+    border: 2px solid #AF13AF;
+    backdrop-filter: blur(4px);
+}
+.form-input:hover {
+    border: 2px solid #AF13AF;
+    box-shadow: 0 0 0 4px #F49AF420;
+}
+.form-input:active, .form-input-2:focus {
+    outline: none;
+    border: 2px solid #AF13AF;
+    box-shadow: 0 0 0 4px #F49AF470;
+}
+
+.btn {
+    background: #AF13AF;
+    border: 1px solid #AF13AF;
+    color: #DEDEDE;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0  #DEDEDE;
+}
+
+
+
+/* 
+@media only screen and (width: 768px) {
+    .navbar-one{
+        height: 28vh
+    }
+    .check-in {
+        text-align: center;
+        margin-left: 15%;
+    }
+} */
+@media only screen and (width: 1024px) {
+    .navbar-one{
+        height: 16vh
+    }
+}
+@media only screen and (width: 1366px) {
+    .navbar-one{
+        height: 54vh
+    }
+}
+@media only screen and (width: 1440px) {
+    .navbar-one{
+        height: 13vh
+    }
+}
+
