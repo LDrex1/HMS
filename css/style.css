@@ -312,12 +312,14 @@ body {
 .ff-inria { font-family: 'Inria Sans', sans-serif;}
 .ff-nunito { font-family: 'Nunito Sans', sans-serif;}
 
+.fw-400 { font-weight: 400;}
 .fw-500 { font-weight: 500;}
 .fw-600 { font-weight: 600;}
 .fw-700 { font-weight: 700;}
 .fw-800 { font-weight: 800;}
 
 @media only screen and (min-width: 992px) {
+    .lg-fw-400 { font-weight: 400;}
     .lg-fw-500 { font-weight: 500;}
     .lg-fw-600 { font-weight: 600;}
     .lg-fw-700 { font-weight: 700;}
