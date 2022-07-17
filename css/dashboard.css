@@ -1,12 +1,29 @@
-
-.bg-neutral {
-    background-color: #FCFCFC;
+.bg-light-1 { 
+    background-color:#F0EEFF;
+}
+.bg-light-2 {
+    background-color: #D5D0FC;
 }
 
-.bg-almostWhite { background-color:#F0EEFF;
+.property-tab-btn.active {
+    background: #D5D0FC;
 }
-
-.mpy {
-    padding-top: 7.25rem;
-    padding-bottom: 7.25rem;
+.property-tab-page {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform ease-in-out 500ms, opacity ease-in-out 350ms;
+}
+.property-tab-page.hide {
+    opacity: 0;
+    transform: scale(0.6);
+}
+.fs-property {
+    font-size: 16px;
+    line-height: 16px;
+}
+@media only screen and (max-width: 991.99px) {
+    .fs-property {
+        font-size: 14px;
+        line-height: 14px;
+    }
 }
