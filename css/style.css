@@ -531,7 +531,9 @@ body {
     .lg-width-10 { width: 10%;}
     .lg-width-15 { width: 15%;}
     .lg-width-20 { width: 20%;}
+    .lg-width-24 { width: 24%;}
     .lg-width-25 { width: 25%;}
+    .lg-width-27 { width: 27%;}
     .lg-width-29 { width: 29%;}
     .lg-width-30 { width: 30%;}
     .lg-width-33 { width: 33%;}
@@ -547,6 +549,7 @@ body {
     .lg-width-60 { width: 60%;}
     .lg-width-66 { width: 66%;}
     .lg-width-70 { width: 70%;}
+    .lg-width-72 { width: 72%;}
     .lg-width-75 { width: 75%;}
     .lg-width-80 { width: 80%;}
     .lg-width-85 { width: 85%;}
@@ -564,6 +567,7 @@ body {
     .lg-width-75px { width: 75px !important;}
     .lg-width-80px { width: 80px !important;}
     .lg-width-100px { width: 100px !important;}
+    .lg-width-130px { width: 130px !important;}
     .lg-width-150px { width: 150px !important;}
     .lg-width-200px { width: 200px !important;}
     .lg-width-250px { width: 250px !important;}
@@ -593,6 +597,7 @@ body {
     .xl-width-15 { width: 15%;}
     .xl-width-20 { width: 20%;}
     .xl-width-25 { width: 25%;}
+    .xl-width-27 { width: 27%;}
     .xl-width-30 { width: 30%;}
     .xl-width-33 { width: 33%;}
     .xl-width-33-third { width: 33.333%;}
@@ -607,6 +612,7 @@ body {
     .xl-width-60 { width: 60%;}
     .xl-width-66 { width: 66%;}
     .xl-width-70 { width: 70%;}
+    .xl-width-72 { width: 72%;}
     .xl-width-75 { width: 75%;}
     .xl-width-80 { width: 80%;}
     .xl-width-85 { width: 85%;}
@@ -647,6 +653,7 @@ body {
 
 
 .border-none { border: none;}
+.outline-none { outline: none;}
 
 .bdr-rad-1 { border-radius: 10px !important;}
 .bdr-rad-2 { border-radius: 5px !important;}
@@ -885,7 +892,7 @@ body {
 .form-input-3.success-input {
     background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #23AC00 calc(100% - 7px), #23AC00 100%);
 }
-select {
+select.form-input-1 {
     appearance: none;
 }
 .input-icon {
@@ -1034,14 +1041,14 @@ input[type="checkbox"]:focus, input[type="checkbox"]:active {
 .banner-background {
     width: 100vw;
     overflow-x: hidden;
-    background-image: linear-gradient(90deg, #A6A6A860, #A6A6A860), url("../img/check-in-background.png");
+    background-image: linear-gradient(90deg, #A6A6A890, #A6A6A890), url("../img/check-in-background.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
 }
 .background-mask {
     background: rgba(0, 0, 0, 0.87);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .background-mask-2 {
     background: #A6A6A860;
