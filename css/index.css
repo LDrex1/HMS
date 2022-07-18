@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px){
+  .privacy{
+  background-image: linear-gradient(rgb(151, 151, 165) , rgba(14, 0, 0, 0.4)), url(../img/mt-bg.png);
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 100px !important;
+}
+}
+@media only screen and (max-width: 426px){
+  .privacy{
+  background-image:url(../img/mt-bg.png);
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 100px !important;
+}
+}
