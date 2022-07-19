@@ -557,10 +557,10 @@ var options = {
   dataLabels: {
     enabled: false
   },
-  tooltip: {
-    followCursor: true,
-    intersect: true
-  },
+  // tooltip: {
+  //   followCursor: false,
+  //   intersect: true
+  // },
   stroke: {
     curve: 'smooth',
     width: 1
@@ -571,7 +571,14 @@ var options = {
     align: 'left'
   },
   grid: {
-    
+    padding: {
+      left: 0,
+      right: 0
+    }
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right'
   },
   xaxis: {
     categories: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -583,18 +590,15 @@ var options = {
 
   var options7 = {
     series: [{
-    name: 'PRODUCT A',
-    data: [44, 55, 41, 67, 22, 43, 21, 49]
-  }, {
-    name: 'PRODUCT C',
-    data: [11, 17, 15, 15, 21, 14, 15, 13]
+    data: [88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88]
   }],
     chart: {
     type: 'bar',
     height: 216,
-    stacked: true,
+    stacked: false,
     stackType: '100%'
   },
+  colors: ["#AF13AF"],
   responsive: [{
     breakpoint: 480,
     options: {
@@ -605,15 +609,31 @@ var options = {
       }
     }
   }],
+  plotOptions: {
+    bar: {
+      columnWidth: 30,
+      distributed: true,
+    }
+  },
+  stroke: {
+    lineCap: "round"
+  },
+  grid: {
+    padding: {
+      left: 0,
+      right: 0
+    }
+  },
   xaxis: {
-    categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
-      '2012 Q3', '2012 Q4'
+    categories: ['06', '07', '08', '09', '10', '11',
+      '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'
     ],
   },
   fill: {
     opacity: 1
   },
   legend: {
+    show: false,
     position: 'right',
     offsetX: 0,
     offsetY: 50
