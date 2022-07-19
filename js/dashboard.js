@@ -450,22 +450,175 @@ var options = {
 
   var options1 = {
     chart: {
-      height: 280,
+      height: 250,
       type: "radialBar",
     },
     series: [85, 90, 70, 80, 70],
     plotOptions: {
       radialBar: {
+        offsetX: 50,
+        hollow: {
+          size: "30%"
+        },
         dataLabels: {
           total: {
-            show: true,
-            label: 'TOTAL'
+            show: false,
+            label: '100%',
+            value: {
+              show: false
+            }
           }
         }
       }
     },
-    labels: ['TEAM A', 'TEAM B', 'TEAM C', 'TEAM D', 'TEAM E']
+    responsive: [
+      {
+        breakpoint: 992,
+        options: {
+          plotOptions: {
+            radialBar: {
+              offsetX: 20,
+              offsetY: 15
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 768,
+        options: {
+          plotOptions: {
+            radialBar: {
+              offsetX: 20,
+              offsetY: 0
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 550,
+        options: {
+          plotOptions: {
+            radialBar: {
+              offsetX: 5
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 470,
+        options: {
+          chart: {
+            height: 220,
+          },
+          plotOptions: {
+            radialBar: {
+              offsetX: 0
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 390,
+        options: {
+          chart: {
+            height: 180,
+          },
+          plotOptions: {
+            radialBar: {
+              offsetX: 0
+            }
+          }
+        }
+      }],
+    labels: ['Others', 'Digital Ads', 'Websites', 'Friends', 'Social Media']
   };
   
   new ApexCharts(document.querySelector("#referrals"), options1).render();
   
+
+  var options6 = {
+    series: [{
+      type: "line",
+      name: "Check-in",
+      data: [410, 312, 358, 510, 540, 350, 280, 390, 602]
+    },
+    {
+      type: "line",
+      name: "Check-out",
+      data: [400, 280, 312, 328, 420, 500, 270, 410, 348]
+    }],
+    chart: {
+    height: 213,
+    type: 'line',
+    zoom: {
+      enabled: false
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  tooltip: {
+    followCursor: true,
+    intersect: true
+  },
+  stroke: {
+    curve: 'smooth',
+    width: 1
+  },
+  colors: ["#BB251A", "#AF13AF"],
+  title: {
+    text: 'Overview',
+    align: 'left'
+  },
+  grid: {
+    
+  },
+  xaxis: {
+    categories: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  }
+  };
+
+  var lineChart = new ApexCharts(document.querySelector("#line-chart"), options6);
+  lineChart.render();
+
+  var options7 = {
+    series: [{
+    name: 'PRODUCT A',
+    data: [44, 55, 41, 67, 22, 43, 21, 49]
+  }, {
+    name: 'PRODUCT C',
+    data: [11, 17, 15, 15, 21, 14, 15, 13]
+  }],
+    chart: {
+    type: 'bar',
+    height: 216,
+    stacked: true,
+    stackType: '100%'
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      legend: {
+        position: 'bottom',
+        offsetX: -10,
+        offsetY: 0
+      }
+    }
+  }],
+  xaxis: {
+    categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
+      '2012 Q3', '2012 Q4'
+    ],
+  },
+  fill: {
+    opacity: 1
+  },
+  legend: {
+    position: 'right',
+    offsetX: 0,
+    offsetY: 50
+  },
+  };
+
+  var barChart = new ApexCharts(document.querySelector("#bar-chart"), options7);
+  barChart.render();

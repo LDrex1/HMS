@@ -295,9 +295,9 @@
         max-width: 100% !important;
     }
 
-    .container h4{
+    /* .container h4{
         border
-    }
+    } */
   
     .gallery-overlay{
         background-color: rgba(128, 128,128, 0);
