@@ -64,3 +64,6 @@ input[type="file"] {
   border: 0.75px solid #CAD4DD;
   outline: none;
 }
+.profile-pic-wrap {
+  overflow: hidden;
+}

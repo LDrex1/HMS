@@ -231,14 +231,22 @@
                                     <div class="d-flex justify-content-between align-items-center py-2">
                                         <h6 class="fs-nav fw-600 mb-3">Total Revenue</h6>
                                         <div class="d-flex border-bottom py-0">
-                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-years">Yearly</p>
-                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-months">Monthly</p>
-                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 active" data-page="#bar-chart-days">Daily</p>
+                                            <p role="button" id="year-tab-btn" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-years">Yearly</p>
+                                            <p role="button" id="month-tab-btn" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-months">Monthly</p>
+                                            <p role="button" id="day-tab-btn" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 active" data-page="#bar-chart-days">Daily</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fs-body-1 fw-700">₦236,535</h5>
-            
+                                        <h5 class="fs-body-1 fw-700 me-5">₦236,535</h5>
+                                        <div class="d-flex ms-4 align-items-center">
+                                            <div class="ratio ratio-1x1 rounded-circle bg-pink-1 d-flex align-items-center justify-content-center width-20px p-0 me-2">
+                                                <i class="fa fa-arrow-up fs-form-input text-white text-center m-0 mt-1"></i>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="fs-body-2 text-pink fs-600 m-0">0.8%</h6>
+                                                <p class="fs-form-input text-grey-6 m-0">Than last day</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div id="bar-chart-days" class="revenue-tab-page w-100 m-0 p-0"></div>
                                     <div id="bar-chart-months" class="revenue-tab-page w-100 m-0 p-0 hide"></div>
@@ -251,7 +259,7 @@
                             <div class="content-box-2 bg-white py-4 px-3">
                                 <h6 class="fs-nav fw-700 mb-3">Recent Customers</h6>
                                 <ul class="list-style-none p-0 m-0">
-                                    <li class="d-flex align-items-center my-2">
+                                    <li class="d-flex align-items-center my-2 py-1">
                                         <div class="width-40px height-40px rounded me-2">
                                             <img src="img/cg-customer-1.png" alt="" class="img-fluid">
                                         </div>
@@ -260,7 +268,7 @@
                                             <p class="fs-form-input text-grey-6 m-0 p-0">Member</p>
                                         </div>
                                     </li>
-                                    <li class="d-flex align-items-center my-2">
+                                    <li class="d-flex align-items-center my-2 py-1">
                                         <div class="width-40px height-40px rounded me-2">
                                             <img src="img/cg-customer-2.png" alt="" class="img-fluid">
                                         </div>
@@ -269,7 +277,7 @@
                                             <p class="fs-form-input text-grey-6 m-0 p-0">Member</p>
                                         </div>
                                     </li>
-                                    <li class="d-flex align-items-center my-2">
+                                    <li class="d-flex align-items-center my-2 py-1">
                                         <div class="width-40px height-40px rounded me-2">
                                             <img src="img/cg-customer-3.png" alt="" class="img-fluid">
                                         </div>
@@ -278,7 +286,7 @@
                                             <p class="fs-form-input text-grey-6 m-0 p-0">Regular Customer</p>
                                         </div>
                                     </li>
-                                    <li class="d-flex align-items-center my-2">
+                                    <li class="d-flex align-items-center my-2 py-1">
                                         <div class="width-40px height-40px rounded me-2">
                                             <img src="img/cg-customer-4.png" alt="" class="img-fluid">
                                         </div>

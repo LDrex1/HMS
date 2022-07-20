@@ -610,7 +610,7 @@ var options = {
   }],
     chart: {
     type: 'bar',
-    height: 165,
+    height: 155,
     stacked: false,
     stackType: '100%'
   },
@@ -697,3 +697,66 @@ var options = {
 
   var barChartDays = new ApexCharts(document.querySelector("#bar-chart-days"), optionsDays);
   barChartDays.render();
+
+  let yearsBtn = document.querySelector('#year-tab-btn');
+  let monthsBtn = document.querySelector('#month-tab-btn');
+  let daysBtn = document.querySelector('#day-tab-btn');
+  let revenueBtns = document.querySelectorAll('.revenue-tab-btn');
+
+  yearsBtn.addEventListener("click", () =>{
+    revenueBtns.forEach(revenueBtn => {
+      revenueBtn.classList.remove("active");
+    })
+
+    yearsBtn.classList.add('active');
+
+    barChartDays.updateOptions({
+      series: [{
+        name: "Revenue",
+      data: [126000400, 130000000, 135000000, 90000000, 110000000, 128000000]
+    }],
+      xaxis: {
+        categories: ['2017', '2018', '2019', '2020', '2021', '2022'],
+      }
+    });
+  })
+
+  monthsBtn.addEventListener("click", () =>{
+    revenueBtns.forEach(revenueBtn => {
+      revenueBtn.classList.remove("active");
+    })
+
+    monthsBtn.classList.add('active');
+
+    barChartDays.updateOptions({
+      series: [{
+        name: "Revenue",
+      data: [12500400, 9000000, 9900480, 12450000, 10000000, 8804000, 11800930, 12100000, 11750000, 10000000, 11000000, 12000000]
+    }],
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      }
+    });
+    
+  })
+
+  daysBtn.addEventListener("click", () =>{
+    revenueBtns.forEach(revenueBtn => {
+      revenueBtn.classList.remove("active");
+    })
+
+    daysBtn.classList.add('active');
+
+    barChartDays.updateOptions({
+      series: [{
+        name: "Revenue",
+      data: [234000, 283480, 575932, 502305, 388100, 428020, 500000, 320050, 600790, 750530, 800000, 775000, 701000, 
+        540000, 550000, 480000, 401000, 513000, 199000, 374000, 295000, 236535]
+      }],
+      xaxis: {
+        categories: ['06', '07', '08', '09', '10', '11',
+          '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'
+        ],
+      }
+    });
+  })
