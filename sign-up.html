@@ -48,9 +48,34 @@
                     <img src="img/email-input.png" alt="" class="input-icon">
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
+                <div class="input-group width-100 mb-3 position-relative">
+                    <p class="fs-form-input mb-1 fw-500">Position</p>
+                    <select name="position" id="admin-signup-position" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black">
+                        <option value="" disabled selected>Please choose an option below...</option>
+                        <option value="Guard">Guard</option>
+                        <option value="Receptionist">Receptionist</option>
+                        <option value="Porter">Porter</option>
+                        <option value="Chef">Chef</option>
+                        <option value="Room Attendant">Room Attendant</option>
+                        <option value="Maintenance Technician">Maintenance Technician</option>
+                        <option value="Janitor">Janitor</option>
+                        <option value="Valet">Valet</option>
+                        <option value="Concierge">Concierge</option>
+                        <option value="Manager">Manager</option>
+                    </select>
+                    <img src="img/name-input.png" alt="" class="input-icon">
+                    <img src="img/select-icon.png" alt="" class="input-icon-right">
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
                 <div class="input-group width-100 mb-3">
                     <p class="fs-form-input mb-1 fw-500">Position </p>
                     <input type="text" name="position " id="admin-signup-position" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Position ">
+                    <img src="img/name-input.png" alt="" class="input-icon">
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+                <div class="input-group width-100 mb-3">
+                    <p class="fs-form-input mb-1 fw-500 ">Kimberly Code</p>
+                    <input type="number" name="kimcode" id="kimcode" class="form-input-1 admin-signup-input  width-100 fs-form-input py-3 px-5 mt-1 text-black  bdr-rad-2" minlength="10" maxlength="10" placeholder="0000000000">
                     <img src="img/name-input.png" alt="" class="input-icon">
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
@@ -74,7 +99,7 @@
                     </div>
                     <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
                 </div>
-                <a href="admin-login.html" type="button" id="admin-signup-btn" class="primary-btn w-100 text-center text-decoration-none fs-copyright fw-700 text-white bdr-rad-2 py-3 my-4">Sign up</a>
+                <button type="submit" id="admin-signup-btn" class="primary-btn w-100 text-center text-decoration-none fs-copyright fw-700 text-white bdr-rad-2 py-3 my-4">Sign up</button>
                 <div class="sigup-option d-flex justify-content-center fs-copyright">
                     <p class="text-grey-2 ">Already have an account?</p>
                     <a href="admin-login.html" class="text-pink fw-700 ms-1">Login here</a>
