@@ -375,6 +375,7 @@ body {
 
 .width-8px { width: 8px !important;}
 .width-12px { width: 12px !important;}
+.width-20px { width: 20px !important;}
 .width-24px { width: 24px !important;}
 .width-25px { width: 25px !important;}
 .width-30px { width: 30px !important;}
@@ -860,7 +861,7 @@ body {
 /*------INPUTS-------*/
 .form-input-1 {
     background: #FFFFFF;
-    border: 0.75px solid #CAD4DD;
+    border: 1px solid #CAD4DD;
     outline: none;
 }
 .form-input-1:focus, .form-input-1:hover, .form-input-1:active {
@@ -895,7 +896,7 @@ body {
     outline: none;
 }
 .form-input-3:focus, .form-input-3:hover, .form-input-3:active {
-    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #4D69FF calc(100% - 7px), #4D69FF 100%);
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #AF13AF calc(100% - 7px), #AF13AF 100%);
 }
 .form-input-3.error-input {
     background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #BB251A calc(100% - 7px), #BB251A 100%);
