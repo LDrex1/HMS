@@ -4,7 +4,7 @@ const swiper = new Swiper(".swiper-container", {
   spaceBetween: 15,
   grabCursor: true,
   direction: "vertical",
-  //   loop: true,
+  loop: true,
   breakpoints: {
     992: {
       slidesPerView: 2.8,
