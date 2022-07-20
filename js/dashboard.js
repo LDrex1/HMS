@@ -453,7 +453,7 @@ var options = {
       height: 250,
       type: "radialBar",
     },
-    series: [85, 90, 70, 80, 70],
+    series: [12, 18, 15, 30, 20],
     plotOptions: {
       radialBar: {
         offsetX: 50,
@@ -536,7 +536,7 @@ var options = {
   new ApexCharts(document.querySelector("#referrals"), options1).render();
   
 
-  var options6 = {
+  var optionsLine = {
     series: [{
       type: "line",
       name: "Check-in",
@@ -552,6 +552,21 @@ var options = {
     type: 'line',
     zoom: {
       enabled: false
+    }
+  },
+  yaxis: {
+    labels: {
+      style: {
+        fontFamily: "Montserrat",
+        offsetX: 5
+      }
+    }
+  },
+  xaxis: {
+    labels: {
+      style: {
+        fontFamily: "Montserrat",
+      }
     }
   },
   dataLabels: {
@@ -585,20 +600,56 @@ var options = {
   }
   };
 
-  var lineChart = new ApexCharts(document.querySelector("#line-chart"), options6);
+  var lineChart = new ApexCharts(document.querySelector("#line-chart"), optionsLine);
   lineChart.render();
 
-  var options7 = {
+  var optionsDays = {
     series: [{
-    data: [88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88]
+      name: "Revenue",
+    data: [234000, 283480, 575932, 502305, 388100, 428020, 500000, 320050, 600790, 750530, 800000, 775000, 701000, 540000, 550000, 480000, 401000, 513000, 199000, 374000, 295000, 236535]
   }],
     chart: {
     type: 'bar',
-    height: 216,
+    height: 165,
     stacked: false,
     stackType: '100%'
   },
   colors: ["#AF13AF"],
+  tooltip: {
+    enabled: false
+  },
+  dataLabels: {
+    enabled: false,
+    show: false
+  },
+  yaxis: {
+    labels: {
+      style: {
+        fontFamily: "Montserrat",
+        colors: "#808191",
+        fontSize: "12px",
+        offsetX: -20
+      }
+    }
+  },
+  xaxis: {
+    categories: ['06', '07', '08', '09', '10', '11',
+      '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'
+    ],
+    labels: {
+      style: {
+        fontFamily: "Montserrat",
+        colors: "#808191",
+        fontSize: "12px",
+      }
+    },
+    axisBorder: {
+      show: false
+    },
+    axisTicks: {
+      show: false
+    },
+  },
   responsive: [{
     breakpoint: 480,
     options: {
@@ -613,21 +664,25 @@ var options = {
     bar: {
       columnWidth: 30,
       distributed: true,
-    }
+      dataLabels: {
+        maxItems: 1,
+        position: "bottom"
+      },
+      borderRadius: 5,
+      colors: {
+        backgroundBarColors: ["#E4E8EF"],
+        backgroundBarRadius: 5
+      }
+    },
   },
-  stroke: {
-    lineCap: "round"
-  },
+  
   grid: {
     padding: {
       left: 0,
-      right: 0
-    }
-  },
-  xaxis: {
-    categories: ['06', '07', '08', '09', '10', '11',
-      '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'
-    ],
+      right: 0,
+      bottom: 0
+    },
+    show: false
   },
   fill: {
     opacity: 1
@@ -640,5 +695,5 @@ var options = {
   },
   };
 
-  var barChart = new ApexCharts(document.querySelector("#bar-chart"), options7);
-  barChart.render();
+  var barChartDays = new ApexCharts(document.querySelector("#bar-chart-days"), optionsDays);
+  barChartDays.render();

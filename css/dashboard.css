@@ -41,6 +41,24 @@
     border-color: #2ED480 !important;
 }
 
+.revenue-tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 1.5px;
+    background: #AF13AF;
+    transition: width 500ms ease-in-out;
+}
+.revenue-tab-btn.active::after {
+    width: 100%;
+}
+.revenue-tab-page.hide {
+    display: none;
+}
+
 .radialBarContent {
     max-height: 120px;
     overflow-y: hidden;

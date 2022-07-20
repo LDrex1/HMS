@@ -227,7 +227,23 @@
                     <div class="row mt-0 mt-lg-3">
                         <div class="pb-3 col-lg-9 col-12 px-1">
                             <div id="here" class="content-box-2 bg-white py-4 px-3">
-                                <div id="bar-chart" class="w-100 m-0 p-0"></div>
+                                <div class="bar-chart-wrap w-100 h-100 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center py-2">
+                                        <h6 class="fs-nav fw-600 mb-3">Total Revenue</h6>
+                                        <div class="d-flex border-bottom py-0">
+                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-years">Yearly</p>
+                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 me-2 me-md-3" data-page="#bar-chart-months">Monthly</p>
+                                            <p role="button" class="revenue-tab-btn position-relative fs-form-input fw-600 text-grey-6 py-2 px-1 bdr-rad-2 my-0 active" data-page="#bar-chart-days">Daily</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="fs-body-1 fw-700">₦236,535</h5>
+            
+                                    </div>
+                                    <div id="bar-chart-days" class="revenue-tab-page w-100 m-0 p-0"></div>
+                                    <div id="bar-chart-months" class="revenue-tab-page w-100 m-0 p-0 hide"></div>
+                                    <div id="bar-chart-years" class="revenue-tab-page w-100 m-0 p-0 hide"></div>
+                                </div>
                             </div>
                         </div>
     
@@ -339,9 +355,9 @@
                                     <h6 class="fw-600 fs-nav">Property List</h6>
                                 </div>
                                 <div class="col-12 col-lg-6 d-flex justify-content-start justify-content-lg-end mt-2 mt-lg-0">
-                                    <p class="property-tab-btn active fs-form-input fw-600 text-pink p-2 bdr-rad-2 me-2 me-md-3 me-lg-4" data-page="#property-images">Popular</p>
-                                    <p class="property-tab-btn fs-form-input fw-600 text-pink p-2 bdr-rad-2 me-2 me-md-3 me-lg-4" data-page="#property-images">Recommended</p>
-                                    <p class="property-tab-btn fs-form-input fw-600 text-pink p-2 bdr-rad-2" data-page="#property-images">Newest</p>
+                                    <p role="button" class="property-tab-btn active fs-form-input fw-600 text-pink p-2 bdr-rad-2 me-2 me-md-3 me-lg-4" data-page="#property-images">Popular</p>
+                                    <p role="button" class="property-tab-btn fs-form-input fw-600 text-pink p-2 bdr-rad-2 me-2 me-md-3 me-lg-4" data-page="#property-images">Recommended</p>
+                                    <p role="button" class="property-tab-btn fs-form-input fw-600 text-pink p-2 bdr-rad-2" data-page="#property-images">Newest</p>
                                 </div>
                             </div>
                             <div id="property-images" class="property-tab-page row py-1 py-lg-3">
@@ -393,67 +409,6 @@
             </div>
         </div>
     </main>
-
-    <footer id="main-footer" class=" bg-neutral-footer text-white">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-lg-4 col-md-12 mt-5">
-                    <div class="">
-                        <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
-                        <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
-                    </div>
-                    <form id="footer-search-form" action="" method="">
-                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
-                            <input type="text" id="footer-search-input" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
-                            <button type="submit" id="footer-search-btn" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
-                        </div>
-                    </form>
-                    
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
-                    
-                    <a href="restaurants.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Restaurants</h6></a>
-                    <a href="rooms.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Rooms and Suites</h6></a>
-                    <a href="events.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Events</h6></a>
-                    
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Company</h5>
-                    
-                    <a href="about-us.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">About us</h6></a>
-                    <a href="blog.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Blog</h6></a>
-                    <a href="contact-us.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Contact us</h6></a>
-                    <a href="index.html#services" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Services</h6></a>
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Support</h5>
-                    
-                    
-                    <a href="privacy-policy.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Privacy Policy</h6></a>
-                    <a href="terms-of-service.html" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Terms of service</h6></a>
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
-                    <a href="http://www.instagram.com" class="text-decoration-none text-white"><i class="fa-brands fa-instagram me-4 mb-5"></i></a>
-                    <a href="http://www.twitter.com" class="text-decoration-none text-white"><i class="fa-brands fa-twitter me-4"></i></a>
-                    <a href="http://www.facebook.com" class="text-decoration-none text-white"><i class="fa-brands fa-facebook-square"></i></a>
-                </div>
-
-            </div>
-
-           <div class="row">
-                <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
-           </div>
-        </div>
-    </footer>
-
-
-
 
     
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
