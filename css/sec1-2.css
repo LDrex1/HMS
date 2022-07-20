@@ -122,7 +122,7 @@ section {
   }
 
   .rooms .swiper-wrapper .bg-neutral-4 {
-    background: white;
+    background: white !important;
   }
 
   .rooms .swiper-slide .text-decoration-underline {
