@@ -864,7 +864,7 @@ body {
     outline: none;
 }
 .form-input-1:focus, .form-input-1:hover, .form-input-1:active {
-    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #4D69FF calc(100% - 7px), #4D69FF 100%);
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #AF13AF calc(100% - 7px), #AF13AF 100%);
 }
 .form-input-1.error-input {
     background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF calc(100% - 7px), #BB251A calc(100% - 7px), #BB251A 100%);
