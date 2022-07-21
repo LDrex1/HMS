@@ -30,7 +30,7 @@
 
    <div class="container">
     <form action="" method="" id="admin-login-form">
-        <div class="admin-signup width-100 md-width-75 lg-width-50 mx-auto py-0 py-md-5 px-2 px-md-4 px-lg-5 bg-neutral-4 my-0 mt-sm-5">
+        <div class="admin-signup width-100 md-width-75 lg-width-50 mx-auto py-4 py-sm-5 px-2 px-md-4 px-lg-5 bg-white sm-bg-neutral-4 my-0 mt-sm-5">
             <h6 id="heading" class="text-center fs-headline-3 fw-700 text-grey-1 width-100 mb-5 mb-sm-4">Admin Login</h6>
             <div class="input-group width-100 mt-2 mb-4">
                 <p class="fs-form-input mb-1 fw-500">Email</p>
@@ -40,8 +40,12 @@
             </div>
             <div class="input-group width-100 mt-3 mb-3">
                 <p class="fs-form-input mb-1 fw-500">Password</p>
-                <input type="Password" name="password" id="admin-login-password" class="form-input-1 admin-signup-input width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Password">
+                <input type="Password" name="password" id="password1" class="form-input-1 admin-signup-input width-100 fs-form-input py-3 px-5 mt-1 text-black" placeholder="Password">
                 <img src="img/password-input.png" alt="" class="input-icon">
+                <div id="password-toggler1" class="password-toggler" role="button" onclick="passwordToggle()">
+                    <img src="img/eye-open.png" id="eye-open1" class="password-eyes eye-open">
+                    <img src="img/eye-closed.png" id="eye-closed1" class="password-eyes eye-closed">
+                </div>
                 <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
             </div>
             <div class="password-text width-100 d-flex align-items-center justify-content-between mt-0 mb-4">
@@ -56,7 +60,7 @@
             <a href="dashboard.html" id="admin-login-btn" type="button" class="primary-btn w-100 text-center fs-copyright text-decoration-none fw-700 text-white bdr-rad-2 py-3 my-3">Log In</a>
             <div class="sigup-option d-flex justify-content-center fs-copyright">
                 <p class="text-grey-2 ">Don't have an account?</p>
-                <a href="sign-up.html" class="text-pink fw-700 ms-1">Sign in here</a>
+                <a href="sign-up.html" class="text-pink fw-700 ms-1">Sign up here</a>
             </div>
         </div>
     </form>

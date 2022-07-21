@@ -14,22 +14,6 @@
     font-size: 1.2em !important; 
 }
 
-/* .pre-img{
-    background-image: url('../img/gn-premium.png');
-    height: 50vh;
-}
- */
-
-
-
-
-/* .pre-img, .stan-img, .hon-img, .del-img  {
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "\2022";  
-} */
-
 .p-move-up{
     margin-top: -5em !important;
 }
@@ -37,13 +21,6 @@
 
 .remove-margin{
     margin-top: -0.5rem !important;
-}
-
-.last-portion{
-    height: ;
-}
-.imggg{
-    /* height: 100%; */
 }
 
 .bottom-bor {
@@ -117,18 +94,6 @@
     .container{
         max-width: 97%;
     }
-    .fs-nav {
-        font-size: 30px;
-        line-height: 22px;
-    }
-    .fs-input {
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .fs-footer {
-        font-size: 33px;
-        line-height: 34px;
-    }
     .bottom-bor {
         border-bottom: 10px solid  #AF13AF;
         overflow: hidden;
@@ -154,22 +119,6 @@
 
     .fs-headline-1{
         font-size: 48px;
-    }
-    .fs-nav {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .fs-input {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .fs-footer {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .fs-body-1 {
-        font-size: 30px;
-        line-height: 28px;
     }
     .img-widthi{
         width: 93.7% !important;
