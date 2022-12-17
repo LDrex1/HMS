@@ -2,11 +2,14 @@ const swiper = new Swiper(".swiper-container", {
   //
   slidesPerView: "auto",
   spaceBetween: 15,
-  grabCursor: true,
+  grabCursor: false,
   direction: "vertical",
-  loop: true,
+  allowTouchMove: false,
   breakpoints: {
     992: {
+      grabCursor: true,
+      allowTouchMove: true,
+      loop: true,
       slidesPerView: 2.8,
       spaceBetween: 30,
       direction: "horizontal",
