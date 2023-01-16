@@ -38,5 +38,15 @@ label a {
   color: #1a1a1a;
 }
 label a:hover {
-  color: #4D69FF;
+  color: #4d69ff;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor {
+    display: none !important;
+  }
+
+  a:hover {
+    color: whitesmoke;
+  }
 }
